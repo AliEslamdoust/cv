@@ -1,0 +1,72 @@
+div.header {
+  background: url(../media/hero-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+nav.body-container {
+  height: max-content !important;
+  * {
+    transition: color 0.15s ease;
+  }
+  li.active {
+    color: #fd562a !important;
+  }
+}
+img.floating {
+  animation: floating 5s infinite;
+}
+img.floatingx {
+  animation: floatingX 5s infinite;
+}
+div.h-image {
+    &::before {
+      content: "";
+      height: 328px;
+      width: 612px;
+      background: #fd562a;
+      border-radius: 10px;
+      position: absolute;
+      right: 20px;
+      top:  100px;
+      transform: rotate(-35deg);
+      animation: rotatez 8s infinite;
+      transform-origin: top;
+    }
+  > img {
+    aspect-ratio: 4/5;
+    object-fit: contain;
+    z-index: 10;
+  }
+}
+@keyframes rotatez {
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes floatingX {
+  0% {
+    transform: translatex(0);
+  }
+  50% {
+    transform: translatex(30px);
+  }
+  100% {
+    transform: translatex(0);
+  }
+}
