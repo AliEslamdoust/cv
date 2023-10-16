@@ -11,71 +11,73 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/portfolio.css" />
+    <link rel="stylesheet" href="./css/service.css" />
   </head>
   <body id="body">
     <h6 id="home"></h6>
+    <!-- header -->
+    <nav
+      id="header"
+      class="py-[24px] flex justify-between items-center fixed top-0 left-[50%] translate-x-[-50%] body-container z-[1000]"
+    >
+      <div class="header-image-container">
+        <a href="#" class="header-image">
+          <img
+            class="w-[160px] drop-shadow-[0_0_10px_#222222]"
+            src="./media/fungi_logo.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <div
+        class="header-menu-container flex items-center flex-grow-[1] h-max justify-end"
+      >
+        <ul id="headerBtns" class="header-menu flex">
+          <li
+            class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+          >
+            <a class="p-[.5rem_1rem]" href="#home">home</a>
+          </li>
+          <li
+            class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+          >
+            <a class="p-[.5rem_1rem]" href="#about">about</a>
+          </li>
+          <li
+            class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+          >
+            <a class="p-[.5rem_1rem]" href="#portfolio">portfolio</a>
+          </li>
+          <li
+            class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+          >
+            <a class="p-[.5rem_1rem]" href="#service">service</a>
+          </li>
+          <li
+            class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+          >
+            <a class="p-[.5rem_1rem]" href="#">testimonials</a>
+          </li>
+          <li
+            class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+          >
+            <a class="p-[.5rem_1rem]" href="#">blog</a>
+          </li>
+          <li
+            class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+          >
+            <a class="p-[.5rem_1rem]" href="#">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End header -->
     <!-- Start header section -->
     <div
+      id="homeContainer"
       class="header main-container flex items-center overflow-hidden h-[100vh]"
     >
       <div class="body-container relative flex items-center px-[12px]">
-        <!-- header -->
-        <nav
-          id="header"
-          class="py-[24px] flex justify-between items-center fixed top-0 left-[50%] translate-x-[-50%] body-container z-[1000]"
-        >
-          <div class="header-image-container">
-            <a href="#" class="header-image">
-              <img
-                class="w-[160px] drop-shadow-[0_0_10px_#222222]"
-                src="./media/fungi_logo.png"
-                alt=""
-              />
-            </a>
-          </div>
-          <div
-            class="header-menu-container flex items-center flex-grow-[1] h-max justify-end"
-          >
-            <ul class="header-menu flex">
-              <li
-                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold active cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-              >
-                <a class="p-[.5rem_1rem]" href="#home">home</a>
-              </li>
-              <li
-                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-              >
-                <a class="p-[.5rem_1rem]" href="#about">about</a>
-              </li>
-              <li
-                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-              >
-                <a class="p-[.5rem_1rem]" href="#portfolio">portfolio</a>
-              </li>
-              <li
-                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-              >
-                <a class="p-[.5rem_1rem]" href="#">service</a>
-              </li>
-              <li
-                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-              >
-                <a class="p-[.5rem_1rem]" href="#">testimonials</a>
-              </li>
-              <li
-                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-              >
-                <a class="p-[.5rem_1rem]" href="#">blog</a>
-              </li>
-              <li
-                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-              >
-                <a class="p-[.5rem_1rem]" href="#">contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <!-- End header -->
         <img
           src="./media/hero-element-1.png"
           alt=""
@@ -185,7 +187,7 @@
     <!-- end header background -->
     <!-- About section -->
     <h6 id="about"></h6>
-    <div class="main-container h-max">
+    <div id="aboutContainer" class="main-container h-max">
       <div class="about-intro h-max bg-[#222] w-[100%] relative">
         <div class="body-container p-[50px_0_60px]">
           <div class="about-text mx-auto mb-[72px] w-[50%] text-center">
@@ -478,8 +480,13 @@
         </div>
       </div>
     </div>
+    <!-- end about section -->
+    <!-- start portfolio section -->
     <h6 id="portfolio"></h6>
-    <div class="main-container h-max p-[120px_0_100px] bg-[#222222] portfolio">
+    <div
+      id="portfolioContainer"
+      class="main-container h-max p-[120px_0_100px] bg-[#222222] portfolio relative"
+    >
       <div class="body-container h-max">
         <div class="mx-auto mb-[72px] w-[50%] text-center">
           <h2 class="text-[24px] text-white mb-[24px] font-bold">PORTFOLIO</h2>
@@ -518,178 +525,327 @@
           >
         </div>
         <div class="portfolio-items flex flex-wrap w-[100%] items-stretch">
-          <div class=" w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css">
-          <div
-            class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
-          >
-            <img
-              src="./media/portfolio-2.png"
-              class="w-[100%] h-[100%] object-contain aspect-square"
-              alt=""
-            />
-            <a href="#"
-              class="rounded-full flex items-center justify-center opacity-0 h-[48px] w-[48px] bg-white text-[18px] text-black cursor-pointer absolute top-[calc(50%_-_24px)] left-[calc(50%_-_24px)] z-20"
-            >
-              <i class="font-normal fa-light fa-plus leading-none"></i>
-            </a>
+          <div class="w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css">
             <div
-              class="portfolio-text w-4/5 absolute top-[calc(50%_+_50px)] left-1/2 -translate-x-1/2 z-20 text-center opacity-0"
+              class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
             >
-              <h4
-                class="text-[16px] text-[#b0aac0] uppercase font-openSans font-bold"
+              <img
+                src="./media/portfolio-2.png"
+                class="w-[100%] h-[100%] object-contain aspect-square"
+                alt=""
+              />
+              <a
+                href="http://powertik.ir/xultra" target="_blank"
+                class="rounded-full flex items-center justify-center opacity-0 h-[48px] w-[48px] bg-white text-[18px] text-black cursor-pointer absolute top-[calc(50%_-_24px)] left-[calc(50%_-_24px)] z-20"
               >
-                HTML & CSS
-              </h4>
-              <p class="text-[21px] font-bold text-white capitalize">
-                a simple shop with sliders and dark mode
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class=" w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css">
-          <div
-            class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
-          >
-            <img
-              src="./media/portfolio-3.png"
-              class="w-[100%] h-[100%] object-contain aspect-square"
-              alt=""
-            />
-            <a href="#"
-              class="rounded-full flex items-center justify-center opacity-0 h-[48px] w-[48px] bg-white text-[18px] text-black cursor-pointer absolute top-[calc(50%_-_24px)] left-[calc(50%_-_24px)] z-20"
-            >
-              <i class="font-normal fa-light fa-plus leading-none"></i>
-            </a>
-            <div
-              class="portfolio-text w-4/5 absolute top-[calc(50%_+_50px)] left-1/2 -translate-x-1/2 z-20 text-center opacity-0"
-            >
-              <h4
-                class="text-[16px] text-[#b0aac0] uppercase font-openSans font-bold"
+                <i class="font-normal fa-light fa-plus leading-none"></i>
+              </a>
+              <div
+                class="portfolio-text w-4/5 absolute top-[calc(50%_+_50px)] left-1/2 -translate-x-1/2 z-20 text-center opacity-0"
               >
-                HTML & CSS
-              </h4>
-              <p class="text-[21px] font-bold text-white capitalize">
-                a well designed personal project with signup/login page
-              </p>
+                <h4
+                  class="text-[16px] text-[#b0aac0] uppercase font-openSans font-bold"
+                >
+                  HTML & CSS
+                </h4>
+                <p class="text-[21px] font-bold text-white capitalize">
+                  a simple shop with sliders and dark mode
+                </p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class=" w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] wordpress">
-          <div
-            class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
-          >
-            <img
-              src="./media/portfolio-4.png"
-              class="w-[100%] h-[100%] object-contain aspect-square"
-              alt=""
-            />
-            <a href="#"
-              class="rounded-full flex items-center justify-center opacity-0 h-[48px] w-[48px] bg-white text-[18px] text-black cursor-pointer absolute top-[calc(50%_-_24px)] left-[calc(50%_-_24px)] z-20"
-            >
-              <i class="font-normal fa-light fa-plus leading-none"></i>
-            </a>
-            <div
-              class="portfolio-text w-4/5 absolute top-[calc(50%_+_50px)] left-1/2 -translate-x-1/2 z-20 text-center opacity-0"
-            >
-              <h4
-                class="text-[16px] text-[#b0aac0] uppercase font-openSans font-bold"
-              >
-                wordpress
-              </h4>
-              <p class="text-[21px] font-bold text-white capitalize">
-                a skit of apple's official website
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class=" w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css">
-          <div
-            class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
-          >
-            <img
-              src="./media/portfolio-5.png"
-              class="w-[100%] h-[100%] object-contain aspect-square"
-              alt=""
-            />
-            <a href="#"
-              class="rounded-full flex items-center justify-center opacity-0 h-[48px] w-[48px] bg-white text-[18px] text-black cursor-pointer absolute top-[calc(50%_-_24px)] left-[calc(50%_-_24px)] z-20"
-            >
-              <i class="font-normal fa-light fa-plus leading-none"></i>
-            </a>
-            <div
-              class="portfolio-text w-4/5 absolute top-[calc(50%_+_50px)] left-1/2 -translate-x-1/2 z-20 text-center opacity-0"
-            >
-              <h4
-                class="text-[16px] text-[#b0aac0] uppercase font-openSans font-bold"
-              >
-                HTML & CSS
-              </h4>
-              <p class="text-[21px] font-bold text-white capitalize">
-                an eCommerce admin panel for international sellers
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class=" w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] design">
-          <div
-            class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
-          >
-            <img
-              src="./media/portfolio-6.png"
-              class="w-[100%] h-[100%] object-contain aspect-square"
-              alt=""
-            />
-            <a href="#"
-              class="rounded-full flex items-center justify-center opacity-0 h-[48px] w-[48px] bg-white text-[18px] text-black cursor-pointer absolute top-[calc(50%_-_24px)] left-[calc(50%_-_24px)] z-20"
-            >
-              <i class="font-normal fa-light fa-plus leading-none"></i>
-            </a>
-            <div
-              class="portfolio-text w-4/5 absolute top-[calc(50%_+_50px)] left-1/2 -translate-x-1/2 z-20 text-center opacity-0"
-            >
-              <h4
-                class="text-[16px] text-[#b0aac0] uppercase font-openSans font-bold"
-              >
-                design
-              </h4>
-              <p class="text-[21px] font-bold text-white capitalize">
-                a skit of Digikala's official website
-              </p>
-            </div>
-          </div>
           </div>
           <div class="w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css">
-          <div
-            class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
-          >
-            <img
-              src="./media/portfolio-1.png"
-              class="w-[100%] h-[100%] object-contain aspect-square"
-              alt=""
-            />
-            <a href="#"
-              class="rounded-full flex items-center justify-center opacity-0 h-[48px] w-[48px] bg-white text-[18px] text-black cursor-pointer absolute top-[calc(50%_-_24px)] left-[calc(50%_-_24px)] z-20"
-            >
-              <i class="font-normal fa-light fa-plus leading-none"></i>
-            </a>
             <div
-              class="portfolio-text w-4/5 absolute top-[calc(50%_+_50px)] left-1/2 -translate-x-1/2 z-20 text-center opacity-0"
+              class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
             >
-              <h4
-                class="text-[16px] text-[#b0aac0] uppercase font-openSans font-bold"
+              <img
+                src="./media/portfolio-3.png"
+                class="w-[100%] h-[100%] object-contain aspect-square"
+                alt=""
+              />
+              <a
+                href="http://powertik.ir/Projects" target="_blank"
+                class="rounded-full flex items-center justify-center opacity-0 h-[48px] w-[48px] bg-white text-[18px] text-black cursor-pointer absolute top-[calc(50%_-_24px)] left-[calc(50%_-_24px)] z-20"
               >
-                HTML & CSS
-              </h4>
-              <p class="text-[21px] font-bold text-white capitalize">
-                a modern single page website with dark mode
+                <i class="font-normal fa-light fa-plus leading-none"></i>
+              </a>
+              <div
+                class="portfolio-text w-4/5 absolute top-[calc(50%_+_50px)] left-1/2 -translate-x-1/2 z-20 text-center opacity-0"
+              >
+                <h4
+                  class="text-[16px] text-[#b0aac0] uppercase font-openSans font-bold"
+                >
+                  HTML & CSS
+                </h4>
+                <p class="text-[21px] font-bold text-white capitalize">
+                  a well designed personal project with signup/login page
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] wordpress"
+          >
+            <div
+              class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
+            >
+              <img
+                src="./media/portfolio-4.png"
+                class="w-[100%] h-[100%] object-contain aspect-square"
+                alt=""
+              />
+              <a
+                href="http://aliesi3410.github.io/apple" target="_blank"
+                class="rounded-full flex items-center justify-center opacity-0 h-[48px] w-[48px] bg-white text-[18px] text-black cursor-pointer absolute top-[calc(50%_-_24px)] left-[calc(50%_-_24px)] z-20"
+              >
+                <i class="font-normal fa-light fa-plus leading-none"></i>
+              </a>
+              <div
+                class="portfolio-text w-4/5 absolute top-[calc(50%_+_50px)] left-1/2 -translate-x-1/2 z-20 text-center opacity-0"
+              >
+                <h4
+                  class="text-[16px] text-[#b0aac0] uppercase font-openSans font-bold"
+                >
+                  wordpress
+                </h4>
+                <p class="text-[21px] font-bold text-white capitalize">
+                  a skit of apple's official website
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css">
+            <div
+              class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
+            >
+              <img
+                src="./media/portfolio-5.png"
+                class="w-[100%] h-[100%] object-contain aspect-square"
+                alt=""
+              />
+              <a
+                href="http://aliesi3410.github.io/adminpanel" target="_blank"
+                class="rounded-full flex items-center justify-center opacity-0 h-[48px] w-[48px] bg-white text-[18px] text-black cursor-pointer absolute top-[calc(50%_-_24px)] left-[calc(50%_-_24px)] z-20"
+              >
+                <i class="font-normal fa-light fa-plus leading-none"></i>
+              </a>
+              <div
+                class="portfolio-text w-4/5 absolute top-[calc(50%_+_50px)] left-1/2 -translate-x-1/2 z-20 text-center opacity-0"
+              >
+                <h4
+                  class="text-[16px] text-[#b0aac0] uppercase font-openSans font-bold"
+                >
+                  HTML & CSS
+                </h4>
+                <p class="text-[21px] font-bold text-white capitalize">
+                  an eCommerce admin panel for international sellers
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] design">
+            <div
+              class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
+            >
+              <img
+                src="./media/portfolio-6.png"
+                class="w-[100%] h-[100%] object-contain aspect-square"
+                alt=""
+              />
+              <a
+                href="http://aliesi3410.github.io/Digikala" target="_blank"
+                class="rounded-full flex items-center justify-center opacity-0 h-[48px] w-[48px] bg-white text-[18px] text-black cursor-pointer absolute top-[calc(50%_-_24px)] left-[calc(50%_-_24px)] z-20"
+              >
+                <i class="font-normal fa-light fa-plus leading-none"></i>
+              </a>
+              <div
+                class="portfolio-text w-4/5 absolute top-[calc(50%_+_50px)] left-1/2 -translate-x-1/2 z-20 text-center opacity-0"
+              >
+                <h4
+                  class="text-[16px] text-[#b0aac0] uppercase font-openSans font-bold"
+                >
+                  design
+                </h4>
+                <p class="text-[21px] font-bold text-white capitalize">
+                  a skit of Digikala's official website
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css">
+            <div
+              class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
+            >
+              <img
+                src="./media/portfolio-1.png"
+                class="w-[100%] h-[100%] object-contain aspect-square"
+                alt=""
+              />
+              <a
+                href="http://Powertik.ir" target="_blank"
+                class="rounded-full flex items-center justify-center opacity-0 h-[48px] w-[48px] bg-white text-[18px] text-black cursor-pointer absolute top-[calc(50%_-_24px)] left-[calc(50%_-_24px)] z-20"
+              >
+                <i class="font-normal fa-light fa-plus leading-none"></i>
+              </a>
+              <div
+                class="portfolio-text w-4/5 absolute top-[calc(50%_+_50px)] left-1/2 -translate-x-1/2 z-20 text-center opacity-0"
+              >
+                <h4
+                  class="text-[16px] text-[#b0aac0] uppercase font-openSans font-bold"
+                >
+                  HTML & CSS
+                </h4>
+                <p class="text-[21px] font-bold text-white capitalize">
+                  a modern single page website with dark mode
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./media/portfolio-element-1.png"
+        class="floating absolute left-[70px] top-[150px]"
+        alt=""
+      />
+      <img
+        src="./media/portfolio-element-2.png"
+        class="floating absolute right-[70px] bottom-[-40px] z-50"
+        alt=""
+      />
+    </div>
+    <!-- End portfolio section -->
+    <!-- start service section -->
+    <div
+      id="serviceContainer"
+      class="serviceContainer main-container relative h-max bg-[#2a2a2a] p-[120px_0_100px]"
+    >
+    <h6 id="service"></h6>
+      <div class="body-container h-max">
+        <div class="mx-auto mb-[72px] w-[50%] text-center">
+          <h2 class="text-[24px] text-white mb-[24px] font-bold uppercase">
+            service
+          </h2>
+          <p class="text-[#b0aac0;] text-[20px] font-openSans">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eos,
+            inventore nesciunt eveniet qui.
+          </p>
+        </div>
+        <div class="serviceFlex flex flex-wrap w-100 items-stretch">
+          <div class="px-[12px] mb-[24px] w-[calc((100%_-_48px)_/_3)]">
+            <div
+              class="group service flex flex-col p-[60px_48px] text-{18px} text-white rounded-[10px] w-[100%] text-center hover:bg-[#3c3c3c] h-[100%]"
+            >
+              <div
+                class="serviceLogo rounded-full bg-[#474747] mb-[30px] h-[96px] w-[96px] flex items-center justify-center mx-auto text-[#fd562a] group-hover:bg-[#fd562a] group-hover:text-white transition-none"
+              >
+                <span
+                  class="fa-light fa-display text-[36px] transition-none"
+                ></span>
+              </div>
+              <h2 class="text-[28px] font-bold mb-[30px] capitalize">Desktop Websites</h2>
+              <p class="font-openSans text-[#b0aac0]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium, consectetur ipsum culpa omnis delectus vero ut,
+                provident minus aspernatur corrupti doloremque odio deleniti.
+              </p>
+            </div>
+          </div>
+          <div class="px-[12px] mb-[24px] w-[calc((100%_-_48px)_/_3)]">
+            <div
+              class="group service flex flex-col p-[60px_48px] text-{18px} text-white rounded-[10px] w-[100%] text-center hover:bg-[#3c3c3c] h-[100%]"
+            >
+              <div
+                class="serviceLogo rounded-full bg-[#474747] mb-[30px] h-[96px] w-[96px] flex items-center justify-center mx-auto text-[#fd562a] group-hover:bg-[#fd562a] group-hover:text-white transition-none"
+              >
+                <span
+                  class="fa-thin fa-mobile-notch text-[36px] transition-none"
+                ></span>
+              </div>
+              <h2 class="text-[28px] font-bold mb-[30px] capitalize">Phone Websites</h2>
+              <p class="font-openSans text-[#b0aac0]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="px-[12px] mb-[24px] w-[calc((100%_-_48px)_/_3)]">
+            <div
+              class="group service flex flex-col p-[60px_48px] text-{18px} text-white rounded-[10px] w-[100%] text-center hover:bg-[#3c3c3c] h-[100%]"
+            >
+              <div
+                class="serviceLogo rounded-full bg-[#474747] mb-[30px] h-[96px] w-[96px] flex items-center justify-center mx-auto text-[#fd562a] group-hover:bg-[#fd562a] group-hover:text-white transition-none"
+              >
+                <span
+                  class="fa-thin fa-tablet text-[36px] transition-none"
+                ></span>
+              </div>
+              <h2 class="text-[28px] font-bold mb-[30px] capitalize">tablet Websites</h2>
+              <p class="font-openSans text-[#b0aac0]">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et doloremque hic perspiciatis. Error, vel exercitationem consequuntur quam neque autem quo voluptatibus praesentium omnis ducimus dolor ex dolore itaque pariatur expedita.
+              </p>
+            </div>
+          </div>
+          <div class="px-[12px] mb-[24px] w-[calc((100%_-_48px)_/_3)]">
+            <div
+              class="group service flex flex-col p-[60px_48px] text-{18px} text-white rounded-[10px] w-[100%] text-center hover:bg-[#3c3c3c] h-[100%]"
+            >
+              <div
+                class="serviceLogo rounded-full bg-[#474747] mb-[30px] h-[96px] w-[96px] flex items-center justify-center mx-auto text-[#fd562a] group-hover:bg-[#fd562a] group-hover:text-white transition-none"
+              >
+                <span
+                  class="fa-thin fa-mug-hot text-[36px] transition-none"
+                ></span>
+              </div>
+              <h2 class="text-[28px] font-bold mb-[30px] capitalize">web consulting</h2>
+              <p class="font-openSans text-[#b0aac0]">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="px-[12px] mb-[24px] w-[calc((100%_-_48px)_/_3)]">
+            <div
+              class="group service flex flex-col p-[60px_48px] text-{18px} text-white rounded-[10px] w-[100%] text-center hover:bg-[#3c3c3c] h-[100%]"
+            >
+              <div
+                class="serviceLogo rounded-full bg-[#474747] mb-[30px] h-[96px] w-[96px] flex items-center justify-center mx-auto text-[#fd562a] group-hover:bg-[#fd562a] group-hover:text-white transition-none"
+              >
+                <span
+                  class="fa-thin fa-lock-keyhole text-[36px] transition-none"
+                ></span>
+              </div>
+              <h2 class="text-[28px] font-bold mb-[30px] capitalize">security assurance</h2>
+              <p class="font-openSans text-[#b0aac0]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium, consectetur ipsum culpa omnis delectus vero ut,
+                provident minus aspernatur corrupti doloremque odio deleniti.
+              </p>
+            </div>
+          </div>
+          <div class="px-[12px] mb-[24px] w-[calc((100%_-_48px)_/_3)]">
+            <div
+              class="group service flex flex-col p-[60px_48px] text-{18px} text-white rounded-[10px] w-[100%] text-center hover:bg-[#3c3c3c] h-[100%]"
+            >
+              <div
+                class="serviceLogo rounded-full bg-[#474747] mb-[30px] h-[96px] w-[96px] flex items-center justify-center mx-auto text-[#fd562a] group-hover:bg-[#fd562a] group-hover:text-white transition-none"
+              >
+                <span
+                  class="fa-thin fa-code text-[36px] transition-none"
+                ></span>
+              </div>
+              <h2 class="text-[28px] font-bold mb-[30px] capitalize">custom algorithm</h2>
+              <p class="font-openSans text-[#b0aac0]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium, consectetur ipsum culpa omnis delectus vero ut,
+                provident minus aspernatur corrupti doloremque odio deleniti.
               </p>
             </div>
           </div>
         </div>
-        </div>
       </div>
+      <img src="./media/service-element-1.png" class="floating absolute left-[70px] top-[20%] z-50" alt="">
+      <img src="./media/service-element-2.png" class="floating absolute right-[100px] top-[40%] z-50" alt="">
+      <img src="./media/service-element-3.png" class="floating absolute left-[60px] bottom-[-40px] z-50" alt="">
     </div>
-    <!-- End About section -->
     <!-- javascript -->
     <script src="./js/main.js"></script>
     <!-- end javascript -->

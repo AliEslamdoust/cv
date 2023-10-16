@@ -1,0 +1,12 @@
+div.serviceFlex {
+  perspective: 1000px;
+  transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1); }
+  div.serviceFlex * {
+    transition: inherit; }
+
+div.service {
+  border: 1px solid #474747; }
+  div.service:hover {
+    transform: rotatey(5deg); }
+
+/*# sourceMappingURL=service.css.map */

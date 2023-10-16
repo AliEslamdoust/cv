@@ -1,14 +1,61 @@
+// run codes after document loaded
 document.addEventListener("DOMContentLoaded", () => {
-  window.addEventListener("scroll", fixHeader);
+  // run certain codes after scrolling
+  window.addEventListener("scroll", () => {
+    // call fixHeader function
+    fixHeader();
+    // call scrollspy function
+    scrollSpy();
+  });
   function fixHeader() {
-    var header = document.getElementById("headerBg");
+    // change header padding
+    const header = document.getElementById("headerBg");
     let headerRect = header.getBoundingClientRect();
     let distancefromTop = headerRect.top;
-    console.log(distancefromTop);
     if (distancefromTop <= 100) {
       document.getElementById("header").style.padding = "12px 0 12px 0";
     } else {
       document.getElementById("header").style.padding = "24px 0 24px 0";
+    }
+  }
+  function scrollSpy() {
+    // var headerMenu;
+    const [
+      homeContainer,
+      aboutContainer,
+      portfolioContainer,
+      serviceContainer,
+    ] = [
+      document.getElementById("homeContainer"),
+      document.getElementById("aboutContainer"),
+      document.getElementById("portfolioContainer"),
+      document.getElementById("serviceContainer"),
+    ];
+    const containers = [
+      homeContainer,
+      aboutContainer,
+      portfolioContainer,
+      serviceContainer,
+    ];
+    for (i in containers) {
+      scrollSituation(containers[i], ++i);
+      i++;
+      // headerMenu = document.querySelector(`#headerBtns :nth-child(${i})`);
+      // console.log(headerMenu);
+    }
+  }
+  // change buttons classlist after certain pageContainers distance from top of the window is less than 0
+  function scrollSituation(pageContainer, order) {
+    var pageSituation = pageContainer.getBoundingClientRect().top;
+    var headerBtn = document.querySelector(`#headerBtns :nth-child(${order})`);
+    var menuBtns = document.querySelectorAll(".header-menu-item");
+    if (pageSituation <= 20) {
+      menuBtns.forEach((menuBtn) => {
+        menuBtn.classList.remove("active");
+      });
+      headerBtn.classList.add("active");
+    } else {
+      headerBtn.classList.remove("active");
     }
   }
   fixHeader();
