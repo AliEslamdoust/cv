@@ -9,13 +9,16 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   function fixHeader() {
     // change header padding
-    const header = document.getElementById("headerBg");
+    const header = document.getElementById("about");
     let headerRect = header.getBoundingClientRect();
     let distancefromTop = headerRect.top;
-    if (distancefromTop <= 100) {
-      document.getElementById("header").style.padding = "12px 0 12px 0";
+    var headerMenu = document.getElementById("header");
+    if (distancefromTop <= 70) {
+      headerMenu.style.padding = "12px 0 12px 0";
+      headerMenu.style.backgroundColor = "#222222";
     } else {
-      document.getElementById("header").style.padding = "24px 0 24px 0";
+      headerMenu.style.padding = "24px 0 24px 0";
+      headerMenu.style.backgroundColor = "transparent";
     }
   }
   function scrollSpy() {

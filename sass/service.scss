@@ -1,13 +1,13 @@
-div.serviceFlex{
-    perspective: 1000px;
-    transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
-    *{
-        transition: inherit;
-    }
+div.serviceFlex {
+  perspective: 1000px;
+  transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+  * {
+    transition: inherit;
+  }
 }
 div.service {
   border: 1px solid #474747;
   &:hover {
-    transform: rotatey(5deg);
+    transform: scale(0.99);
   }
 }

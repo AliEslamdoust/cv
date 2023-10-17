@@ -16,61 +16,62 @@
   <body id="body">
     <h6 id="home"></h6>
     <!-- header -->
-    <nav
-      id="header"
-      class="py-[24px] flex justify-between items-center fixed top-0 left-[50%] translate-x-[-50%] body-container z-[1000]"
-    >
-      <div class="header-image-container">
-        <a href="#" class="header-image">
-          <img
-            class="w-[160px] drop-shadow-[0_0_10px_#222222]"
-            src="./media/fungi_logo.png"
-            alt=""
-          />
-        </a>
-      </div>
-      <div
-        class="header-menu-container flex items-center flex-grow-[1] h-max justify-end"
+    <div class="fixed top-0 left-[50%] translate-x-[-50%] py-[24px] main-container h-max z-[1000]" id="header">
+      <nav
+        class="flex justify-between items-center body-container"
       >
-        <ul id="headerBtns" class="header-menu flex">
-          <li
-            class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-          >
-            <a class="p-[.5rem_1rem]" href="#home">home</a>
-          </li>
-          <li
-            class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-          >
-            <a class="p-[.5rem_1rem]" href="#about">about</a>
-          </li>
-          <li
-            class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-          >
-            <a class="p-[.5rem_1rem]" href="#portfolio">portfolio</a>
-          </li>
-          <li
-            class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-          >
-            <a class="p-[.5rem_1rem]" href="#service">service</a>
-          </li>
-          <li
-            class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-          >
-            <a class="p-[.5rem_1rem]" href="#">testimonials</a>
-          </li>
-          <li
-            class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-          >
-            <a class="p-[.5rem_1rem]" href="#">blog</a>
-          </li>
-          <li
-            class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-          >
-            <a class="p-[.5rem_1rem]" href="#">contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <div class="header-image-container">
+          <a href="#" class="header-image">
+            <img
+              class="w-[160px] drop-shadow-[0_0_10px_#222222]"
+              src="./media/fungi_logo.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div
+          class="header-menu-container flex items-center flex-grow-[1] h-max justify-end"
+        >
+          <ul id="headerBtns" class="header-menu flex">
+            <li
+              class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+            >
+              <a class="p-[.5rem_1rem]" href="#home">home</a>
+            </li>
+            <li
+              class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+            >
+              <a class="p-[.5rem_1rem]" href="#about">about</a>
+            </li>
+            <li
+              class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+            >
+              <a class="p-[.5rem_1rem]" href="#portfolio">portfolio</a>
+            </li>
+            <li
+              class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+            >
+              <a class="p-[.5rem_1rem]" href="#service">service</a>
+            </li>
+            <li
+              class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+            >
+              <a class="p-[.5rem_1rem]" href="#">testimonials</a>
+            </li>
+            <li
+              class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+            >
+              <a class="p-[.5rem_1rem]" href="#">blog</a>
+            </li>
+            <li
+              class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+            >
+              <a class="p-[.5rem_1rem]" href="#">contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <!-- End header -->
     <!-- Start header section -->
     <div
@@ -180,10 +181,10 @@
     </div>
     <!-- End header section -->
     <!-- header background -->
-    <div
+    <!-- <div
       class="header-bg sticky top-0 left-0 w-[100%] h-[70px] bg-[#222] z-[999]"
       id="headerBg"
-    ></div>
+    ></div> -->
     <!-- end header background -->
     <!-- About section -->
     <h6 id="about"></h6>
@@ -535,7 +536,8 @@
                 alt=""
               />
               <a
-                href="http://powertik.ir/xultra" target="_blank"
+                href="http://powertik.ir/xultra"
+                target="_blank"
                 class="rounded-full flex items-center justify-center opacity-0 h-[48px] w-[48px] bg-white text-[18px] text-black cursor-pointer absolute top-[calc(50%_-_24px)] left-[calc(50%_-_24px)] z-20"
               >
                 <i class="font-normal fa-light fa-plus leading-none"></i>
@@ -564,7 +566,8 @@
                 alt=""
               />
               <a
-                href="http://powertik.ir/Projects" target="_blank"
+                href="http://powertik.ir/Projects"
+                target="_blank"
                 class="rounded-full flex items-center justify-center opacity-0 h-[48px] w-[48px] bg-white text-[18px] text-black cursor-pointer absolute top-[calc(50%_-_24px)] left-[calc(50%_-_24px)] z-20"
               >
                 <i class="font-normal fa-light fa-plus leading-none"></i>
@@ -595,7 +598,8 @@
                 alt=""
               />
               <a
-                href="http://aliesi3410.github.io/apple" target="_blank"
+                href="http://aliesi3410.github.io/apple"
+                target="_blank"
                 class="rounded-full flex items-center justify-center opacity-0 h-[48px] w-[48px] bg-white text-[18px] text-black cursor-pointer absolute top-[calc(50%_-_24px)] left-[calc(50%_-_24px)] z-20"
               >
                 <i class="font-normal fa-light fa-plus leading-none"></i>
@@ -624,7 +628,8 @@
                 alt=""
               />
               <a
-                href="http://aliesi3410.github.io/adminpanel" target="_blank"
+                href="http://aliesi3410.github.io/adminpanel"
+                target="_blank"
                 class="rounded-full flex items-center justify-center opacity-0 h-[48px] w-[48px] bg-white text-[18px] text-black cursor-pointer absolute top-[calc(50%_-_24px)] left-[calc(50%_-_24px)] z-20"
               >
                 <i class="font-normal fa-light fa-plus leading-none"></i>
@@ -653,7 +658,8 @@
                 alt=""
               />
               <a
-                href="http://aliesi3410.github.io/Digikala" target="_blank"
+                href="http://aliesi3410.github.io/Digikala"
+                target="_blank"
                 class="rounded-full flex items-center justify-center opacity-0 h-[48px] w-[48px] bg-white text-[18px] text-black cursor-pointer absolute top-[calc(50%_-_24px)] left-[calc(50%_-_24px)] z-20"
               >
                 <i class="font-normal fa-light fa-plus leading-none"></i>
@@ -682,7 +688,8 @@
                 alt=""
               />
               <a
-                href="http://Powertik.ir" target="_blank"
+                href="http://Powertik.ir"
+                target="_blank"
                 class="rounded-full flex items-center justify-center opacity-0 h-[48px] w-[48px] bg-white text-[18px] text-black cursor-pointer absolute top-[calc(50%_-_24px)] left-[calc(50%_-_24px)] z-20"
               >
                 <i class="font-normal fa-light fa-plus leading-none"></i>
@@ -720,7 +727,7 @@
       id="serviceContainer"
       class="serviceContainer main-container relative h-max bg-[#2a2a2a] p-[120px_0_100px]"
     >
-    <h6 id="service"></h6>
+      <h6 id="service"></h6>
       <div class="body-container h-max">
         <div class="mx-auto mb-[72px] w-[50%] text-center">
           <h2 class="text-[24px] text-white mb-[24px] font-bold uppercase">
@@ -743,7 +750,9 @@
                   class="fa-light fa-display text-[36px] transition-none"
                 ></span>
               </div>
-              <h2 class="text-[28px] font-bold mb-[30px] capitalize">Desktop Websites</h2>
+              <h2 class="text-[28px] font-bold mb-[30px] capitalize">
+                Desktop Websites
+              </h2>
               <p class="font-openSans text-[#b0aac0]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Accusantium, consectetur ipsum culpa omnis delectus vero ut,
@@ -762,7 +771,9 @@
                   class="fa-thin fa-mobile-notch text-[36px] transition-none"
                 ></span>
               </div>
-              <h2 class="text-[28px] font-bold mb-[30px] capitalize">Phone Websites</h2>
+              <h2 class="text-[28px] font-bold mb-[30px] capitalize">
+                Phone Websites
+              </h2>
               <p class="font-openSans text-[#b0aac0]">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </p>
@@ -779,9 +790,14 @@
                   class="fa-thin fa-tablet text-[36px] transition-none"
                 ></span>
               </div>
-              <h2 class="text-[28px] font-bold mb-[30px] capitalize">tablet Websites</h2>
+              <h2 class="text-[28px] font-bold mb-[30px] capitalize">
+                tablet Websites
+              </h2>
               <p class="font-openSans text-[#b0aac0]">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et doloremque hic perspiciatis. Error, vel exercitationem consequuntur quam neque autem quo voluptatibus praesentium omnis ducimus dolor ex dolore itaque pariatur expedita.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
+                doloremque hic perspiciatis. Error, vel exercitationem
+                consequuntur quam neque autem quo voluptatibus praesentium omnis
+                ducimus dolor ex dolore itaque pariatur expedita.
               </p>
             </div>
           </div>
@@ -796,7 +812,9 @@
                   class="fa-thin fa-mug-hot text-[36px] transition-none"
                 ></span>
               </div>
-              <h2 class="text-[28px] font-bold mb-[30px] capitalize">web consulting</h2>
+              <h2 class="text-[28px] font-bold mb-[30px] capitalize">
+                web consulting
+              </h2>
               <p class="font-openSans text-[#b0aac0]">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               </p>
@@ -813,7 +831,9 @@
                   class="fa-thin fa-lock-keyhole text-[36px] transition-none"
                 ></span>
               </div>
-              <h2 class="text-[28px] font-bold mb-[30px] capitalize">security assurance</h2>
+              <h2 class="text-[28px] font-bold mb-[30px] capitalize">
+                security assurance
+              </h2>
               <p class="font-openSans text-[#b0aac0]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Accusantium, consectetur ipsum culpa omnis delectus vero ut,
@@ -832,7 +852,9 @@
                   class="fa-thin fa-code text-[36px] transition-none"
                 ></span>
               </div>
-              <h2 class="text-[28px] font-bold mb-[30px] capitalize">custom algorithm</h2>
+              <h2 class="text-[28px] font-bold mb-[30px] capitalize">
+                custom algorithm
+              </h2>
               <p class="font-openSans text-[#b0aac0]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Accusantium, consectetur ipsum culpa omnis delectus vero ut,
@@ -842,9 +864,21 @@
           </div>
         </div>
       </div>
-      <img src="./media/service-element-1.png" class="floating absolute left-[70px] top-[20%] z-50" alt="">
-      <img src="./media/service-element-2.png" class="floating absolute right-[100px] top-[40%] z-50" alt="">
-      <img src="./media/service-element-3.png" class="floating absolute left-[60px] bottom-[-40px] z-50" alt="">
+      <img
+        src="./media/service-element-1.png"
+        class="floating absolute left-[70px] top-[20%] z-50"
+        alt=""
+      />
+      <img
+        src="./media/service-element-2.png"
+        class="floating absolute right-[100px] top-[40%] z-50"
+        alt=""
+      />
+      <img
+        src="./media/service-element-3.png"
+        class="floating absolute left-[60px] bottom-[-40px] z-50"
+        alt=""
+      />
     </div>
     <!-- javascript -->
     <script src="./js/main.js"></script>

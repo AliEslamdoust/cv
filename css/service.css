@@ -7,6 +7,6 @@ div.serviceFlex {
 div.service {
   border: 1px solid #474747; }
   div.service:hover {
-    transform: rotatey(5deg); }
+    transform: scale(0.99); }
 
 /*# sourceMappingURL=service.css.map */

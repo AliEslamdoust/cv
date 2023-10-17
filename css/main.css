@@ -626,6 +626,10 @@ video {
   right: -60px;
 }
 
+.right-\[100px\] {
+  right: 100px;
+}
+
 .right-\[50px\] {
   right: 50px;
 }
@@ -642,12 +646,12 @@ video {
   top: -45px;
 }
 
-.top-\[120px\] {
-  top: 120px;
-}
-
 .top-\[150px\] {
   top: 150px;
+}
+
+.top-\[20\%\] {
+  top: 20%;
 }
 
 .top-\[3\%\] {
@@ -676,26 +680,6 @@ video {
 
 .top-\[calc\(50\%_-_24px\)\] {
   top: calc(50% - 24px);
-}
-
-.top-\[20px\] {
-  top: 20px;
-}
-
-.top-\[20\%\] {
-  top: 20%;
-}
-
-.top-\[translate-x-\\\[20\\\%\\\]\] {
-  top: translate-x-\[20\%\];
-}
-
-.bottom-\[-60px\] {
-  bottom: -60px;
-}
-
-.right-\[100px\] {
-  right: 100px;
 }
 
 .z-10 {
