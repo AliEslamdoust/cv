@@ -1,0 +1,12 @@
+div.footerContainer {
+  background: url(../media/footer-bg.jpg) center no-repeat;
+  background-size: cover; }
+
+img.footerLogo {
+  width: 150px;
+  object-fit: contain; }
+
+span.fa-brands {
+  transition-duration: .15s; }
+
+/*# sourceMappingURL=footer.css.map */

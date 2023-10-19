@@ -6,11 +6,13 @@
   "scripts": {
     "tailwind": "tailwindcss -i ./src/tailwind.css -o ./css/main.css --watch"
   },
- 
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "swiper": "^10.3.1"
   }
 }

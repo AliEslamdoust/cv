@@ -12,66 +12,74 @@
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/portfolio.css" />
     <link rel="stylesheet" href="./css/service.css" />
+    <link rel="stylesheet" href="./css/testimonial.css" />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body id="body">
     <h6 id="home"></h6>
     <!-- header -->
-    <div class="fixed top-0 left-[50%] translate-x-[-50%] py-[24px] main-container h-max z-[1000]" id="header">
-      <nav
-        class="flex justify-between items-center body-container"
+    <header>
+      <div
+        class="fixed top-0 left-[50%] translate-x-[-50%] py-[24px] main-container h-max z-[1000]"
+        id="header"
       >
-        <div class="header-image-container">
-          <a href="#" class="header-image">
-            <img
-              class="w-[160px] drop-shadow-[0_0_10px_#222222]"
-              src="./media/fungi_logo.png"
-              alt=""
-            />
-          </a>
-        </div>
-        <div
-          class="header-menu-container flex items-center flex-grow-[1] h-max justify-end"
-        >
-          <ul id="headerBtns" class="header-menu flex">
-            <li
-              class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-            >
-              <a class="p-[.5rem_1rem]" href="#home">home</a>
-            </li>
-            <li
-              class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-            >
-              <a class="p-[.5rem_1rem]" href="#about">about</a>
-            </li>
-            <li
-              class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-            >
-              <a class="p-[.5rem_1rem]" href="#portfolio">portfolio</a>
-            </li>
-            <li
-              class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-            >
-              <a class="p-[.5rem_1rem]" href="#service">service</a>
-            </li>
-            <li
-              class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-            >
-              <a class="p-[.5rem_1rem]" href="#">testimonials</a>
-            </li>
-            <li
-              class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-            >
-              <a class="p-[.5rem_1rem]" href="#">blog</a>
-            </li>
-            <li
-              class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
-            >
-              <a class="p-[.5rem_1rem]" href="#">contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+        <nav class="flex justify-between items-center body-container">
+          <div class="header-image-container">
+            <a href="#" class="header-image">
+              <img
+                class="w-[160px] drop-shadow-[0_0_10px_#222222]"
+                src="./media/fungi_logo.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div
+            class="header-menu-container flex items-center flex-grow-[1] h-max justify-end"
+          >
+            <ul id="headerBtns" class="header-menu flex">
+              <li
+                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+              >
+                <a class="p-[.5rem_1rem]" href="#home">home</a>
+              </li>
+              <li
+                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+              >
+                <a class="p-[.5rem_1rem]" href="#about">about</a>
+              </li>
+              <li
+                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+              >
+                <a class="p-[.5rem_1rem]" href="#portfolio">portfolio</a>
+              </li>
+              <li
+                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+              >
+                <a class="p-[.5rem_1rem]" href="#service">service</a>
+              </li>
+              <li
+                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+              >
+                <a class="p-[.5rem_1rem]" href="#testimonials">testimonials</a>
+              </li>
+              <li
+                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+              >
+                <a class="p-[.5rem_1rem]" href="#blog">blog</a>
+              </li>
+              <li
+                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+              >
+                <a class="p-[.5rem_1rem]" href="#contact">contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
     <!-- End header -->
     <!-- Start header section -->
     <div
@@ -180,12 +188,6 @@
       </div>
     </div>
     <!-- End header section -->
-    <!-- header background -->
-    <!-- <div
-      class="header-bg sticky top-0 left-0 w-[100%] h-[70px] bg-[#222] z-[999]"
-      id="headerBg"
-    ></div> -->
-    <!-- end header background -->
     <!-- About section -->
     <h6 id="about"></h6>
     <div id="aboutContainer" class="main-container h-max">
@@ -880,7 +882,737 @@
         alt=""
       />
     </div>
+    <!-- start testimonial -->
+    <div class="main-container testimonial h-max relative">
+      <h6 id="testimonials"></h6>
+      <div id="testimonialsContainer" class="body-container p-[120px_0_100px]">
+        <div class="mx-auto mb-[72px] w-[50%] text-center">
+          <h2 class="text-[24px] text-white mb-[24px] font-bold uppercase">
+            testimonials
+          </h2>
+          <p class="text-[#b0aac0;] text-[20px] font-openSans">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eos,
+            inventore nesciunt eveniet qui.
+          </p>
+        </div>
+        <div class="slider-container">
+          <div class="swiper testimonialSlider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="slideContainer relative rounded-[10px] bg-[#2f2f2f] mt-[36px] p-[60px_48px_48px] flex flex-col items-center w-[100%] h-[100%]"
+                >
+                  <div
+                    class="testImg p-[24px] rounded-full bg-[#fd562a] absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                  >
+                    <img
+                      src="./media/quote-icon.png"
+                      class="w-[24px] h-[24px] object-contain"
+                      alt=""
+                    />
+                  </div>
+                  <p
+                    class="italic text-[18px] text-[#b0aac0] font-openSans mb-[30px] text-center"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam labore quam iste in consequuntur quis, fugiat
+                    reprehenderit natus et voluptate, consequatur rerum. Eveniet
+                    quaerat ut aliquid temporibus, mollitia porro distinctio!
+                  </p>
+                  <div class="testAbout flex items-center">
+                    <img
+                      src="./media/testimonial-author-2.jpg"
+                      class="h-[60px] w-[60px] rounded-full object-contain mr-[20px]"
+                      alt=""
+                    />
+                    <h4 class="text-[21px] text-white font-bold flex flex-col">
+                      <p>Sandija Ema</p>
+                      <span
+                        class="text-[#948daa] font-openSans text-[16px] mt-[8px] font-normal"
+                        >Web Developer</span
+                      >
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="slideContainer relative rounded-[10px] bg-[#2f2f2f] mt-[36px] p-[60px_48px_48px] flex flex-col items-center w-[100%] h-max"
+                >
+                  <div
+                    class="testImg p-[24px] rounded-full bg-[#fd562a] absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                  >
+                    <img
+                      src="./media/quote-icon.png"
+                      class="w-[24px] h-[24px] object-contain"
+                      alt=""
+                    />
+                  </div>
+                  <p
+                    class="italic text-[18px] text-[#b0aac0] font-openSans mb-[30px] text-center"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam labore quam iste in consequuntur quis, fugiat
+                    reprehenderit natus et voluptate, consequatur rerum. Eveniet
+                    quaerat ut aliquid temporibus, mollitia porro distinctio!
+                  </p>
+                  <div class="testAbout flex items-center">
+                    <img
+                      src="./media/testimonial-author-3.jpg"
+                      class="h-[60px] w-[60px] rounded-full object-contain mr-[20px]"
+                      alt=""
+                    />
+                    <h4 class="text-[21px] text-white font-bold flex flex-col">
+                      <p>Sandija Ema</p>
+                      <span
+                        class="text-[#948daa] font-openSans text-[16px] mt-[8px] font-normal"
+                        >Web Developer</span
+                      >
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="slideContainer relative rounded-[10px] bg-[#2f2f2f] mt-[36px] p-[60px_48px_48px] flex flex-col items-center w-[100%] h-max"
+                >
+                  <div
+                    class="testImg p-[24px] rounded-full bg-[#fd562a] absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                  >
+                    <img
+                      src="./media/quote-icon.png"
+                      class="w-[24px] h-[24px] object-contain"
+                      alt=""
+                    />
+                  </div>
+                  <p
+                    class="italic text-[18px] text-[#b0aac0] font-openSans mb-[30px] text-center"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam labore quam iste in consequuntur quis, fugiat
+                    reprehenderit natus et voluptate, consequatur rerum. Eveniet
+                    quaerat ut aliquid temporibus, mollitia porro distinctio!
+                  </p>
+                  <div class="testAbout flex items-center">
+                    <img
+                      src="./media/testimonial-author-4.jpg"
+                      class="h-[60px] w-[60px] rounded-full object-contain mr-[20px]"
+                      alt=""
+                    />
+                    <h4 class="text-[21px] text-white font-bold flex flex-col">
+                      <p>Sandija Ema</p>
+                      <span
+                        class="text-[#948daa] font-openSans text-[16px] mt-[8px] font-normal"
+                        >Web Developer</span
+                      >
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="slideContainer relative rounded-[10px] bg-[#2f2f2f] mt-[36px] p-[60px_48px_48px] flex flex-col items-center w-[100%] h-max"
+                >
+                  <div
+                    class="testImg p-[24px] rounded-full bg-[#fd562a] absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                  >
+                    <img
+                      src="./media/quote-icon.png"
+                      class="w-[24px] h-[24px] object-contain"
+                      alt=""
+                    />
+                  </div>
+                  <p
+                    class="italic text-[18px] text-[#b0aac0] font-openSans mb-[30px] text-center"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam labore quam iste in consequuntur quis, fugiat
+                    reprehenderit natus et voluptate, consequatur rerum. Eveniet
+                    quaerat ut aliquid temporibus, mollitia porro distinctio!
+                  </p>
+                  <div class="testAbout flex items-center">
+                    <img
+                      src="./media/testimonial-author-1.jpg"
+                      class="h-[60px] w-[60px] rounded-full object-contain mr-[20px]"
+                      alt=""
+                    />
+                    <h4 class="text-[21px] text-white font-bold flex flex-col">
+                      <p>Sandija Ema</p>
+                      <span
+                        class="text-[#948daa] font-openSans text-[16px] mt-[8px] font-normal"
+                        >Web Developer</span
+                      >
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="slideContainer relative rounded-[10px] bg-[#2f2f2f] mt-[36px] p-[60px_48px_48px] flex flex-col items-center w-[100%] h-max"
+                >
+                  <div
+                    class="testImg p-[24px] rounded-full bg-[#fd562a] absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                  >
+                    <img
+                      src="./media/quote-icon.png"
+                      class="w-[24px] h-[24px] object-contain"
+                      alt=""
+                    />
+                  </div>
+                  <p
+                    class="italic text-[18px] text-[#b0aac0] font-openSans mb-[30px] text-center"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam labore quam iste in consequuntur quis, fugiat
+                    reprehenderit natus et voluptate, consequatur rerum. Eveniet
+                    quaerat ut aliquid temporibus, mollitia porro distinctio!
+                  </p>
+                  <div class="testAbout flex items-center">
+                    <img
+                      src="./media/testimonial-author-1.jpg"
+                      class="h-[60px] w-[60px] rounded-full object-contain mr-[20px]"
+                      alt=""
+                    />
+                    <h4 class="text-[21px] text-white font-bold flex flex-col">
+                      <p>Sandija Ema</p>
+                      <span
+                        class="text-[#948daa] font-openSans text-[16px] mt-[8px] font-normal"
+                        >Web Developer</span
+                      >
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="slideContainer relative rounded-[10px] bg-[#2f2f2f] mt-[36px] p-[60px_48px_48px] flex flex-col items-center w-[100%] h-max"
+                >
+                  <div
+                    class="testImg p-[24px] rounded-full bg-[#fd562a] absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                  >
+                    <img
+                      src="./media/quote-icon.png"
+                      class="w-[24px] h-[24px] object-contain"
+                      alt=""
+                    />
+                  </div>
+                  <p
+                    class="italic text-[18px] text-[#b0aac0] font-openSans mb-[30px] text-center"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam labore quam iste in consequuntur quis, fugiat
+                    reprehenderit natus et voluptate, consequatur rerum. Eveniet
+                    quaerat ut aliquid temporibus, mollitia porro distinctio!
+                  </p>
+                  <div class="testAbout flex items-center">
+                    <img
+                      src="./media/testimonial-author-1.jpg"
+                      class="h-[60px] w-[60px] rounded-full object-contain mr-[20px]"
+                      alt=""
+                    />
+                    <h4 class="text-[21px] text-white font-bold flex flex-col">
+                      <p>Sandija Ema</p>
+                      <span
+                        class="text-[#948daa] font-openSans text-[16px] mt-[8px] font-normal"
+                        >Web Developer</span
+                      >
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="slideContainer relative rounded-[10px] bg-[#2f2f2f] mt-[36px] p-[60px_48px_48px] flex flex-col items-center w-[100%] h-max"
+                >
+                  <div
+                    class="testImg p-[24px] rounded-full bg-[#fd562a] absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                  >
+                    <img
+                      src="./media/quote-icon.png"
+                      class="w-[24px] h-[24px] object-contain"
+                      alt=""
+                    />
+                  </div>
+                  <p
+                    class="italic text-[18px] text-[#b0aac0] font-openSans mb-[30px] text-center"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam labore quam iste in consequuntur quis, fugiat
+                    reprehenderit natus et voluptate, consequatur rerum. Eveniet
+                    quaerat ut aliquid temporibus, mollitia porro distinctio!
+                  </p>
+                  <div class="testAbout flex items-center">
+                    <img
+                      src="./media/testimonial-author-1.jpg"
+                      class="h-[60px] w-[60px] rounded-full object-contain mr-[20px]"
+                      alt=""
+                    />
+                    <h4 class="text-[21px] text-white font-bold flex flex-col">
+                      <p>Sandija Ema</p>
+                      <span
+                        class="text-[#948daa] font-openSans text-[16px] mt-[8px] font-normal"
+                        >Web Developer</span
+                      >
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="slideContainer relative rounded-[10px] bg-[#2f2f2f] mt-[36px] p-[60px_48px_48px] flex flex-col items-center w-[100%] h-max"
+                >
+                  <div
+                    class="testImg p-[24px] rounded-full bg-[#fd562a] absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                  >
+                    <img
+                      src="./media/quote-icon.png"
+                      class="w-[24px] h-[24px] object-contain"
+                      alt=""
+                    />
+                  </div>
+                  <p
+                    class="italic text-[18px] text-[#b0aac0] font-openSans mb-[30px] text-center"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam labore quam iste in consequuntur quis, fugiat
+                    reprehenderit natus et voluptate, consequatur rerum. Eveniet
+                    quaerat ut aliquid temporibus, mollitia porro distinctio!
+                  </p>
+                  <div class="testAbout flex items-center">
+                    <img
+                      src="./media/testimonial-author-1.jpg"
+                      class="h-[60px] w-[60px] rounded-full object-contain mr-[20px]"
+                      alt=""
+                    />
+                    <h4 class="text-[21px] text-white font-bold flex flex-col">
+                      <p>Sandija Ema</p>
+                      <span
+                        class="text-[#948daa] font-openSans text-[16px] mt-[8px] font-normal"
+                        >Web Developer</span
+                      >
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end testimonial -->
+    <!-- start blog -->
+    <div id="blogContainer" class="main-container h-max bg-[#222222]">
+      <h6 id="blog"></h6>
+      <div class="body-container p-[120px_0_100px] relative">
+        <img
+          src="./media/blog-element-1.png"
+          class="floating absolute left-0 -translate-x-1/2 top-[100px] z-50"
+          alt=""
+        />
+        <img
+          src="./media/blog-element-2.png"
+          class="floating absolute right-0 translate-x-1/2 bottom-[50px] z-50"
+          alt=""
+        />
+        <div class="mx-auto mb-[72px] w-[50%] text-center">
+          <h2 class="text-[24px] text-white mb-[24px] font-bold uppercase">
+            blog
+          </h2>
+          <p class="text-[#b0aac0;] text-[20px] font-openSans">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eos,
+            inventore nesciunt eveniet qui.
+          </p>
+        </div>
+        <div class="blogGird w-[100%]">
+          <div class="bg-white blog-left group relative">
+            <img
+              class="brightness-75 group-hover:brightness-50"
+              src="./media/post-thumbnail-01.jpg"
+              alt=""
+            />
+            <div
+              class="blogText absolute w-4/5 flex flex-col left-1/2 bottom-0 -translate-x-1/2 pb-[60px]"
+            >
+              <div class="flex items-center gap-2 mb-[12px]">
+                <span
+                  class="font-openSans text-[16px] text-white flex gap-1 capitalize items-center"
+                >
+                  <i class="font-normal fa fa-timer text-[16px]"></i>
+                  <p>October 19, 2023</p>
+                </span>
+                <span
+                  class="font-openSans text-[16px] text-white flex gap-1 capitalize items-center"
+                >
+                  <i class="font-normal fa fa-folder text-[16px]"></i>
+                  <p>Web design</p>
+                </span>
+              </div>
+              <a
+                href="#"
+                class="flex text-white font-bold text-[30px] hover:text-[#fd562a] lowercase"
+                >Javascript algorythm and data structure for beginners</a
+              >
+            </div>
+          </div>
+          <div class="blog-tr relative group">
+            <img
+              src="./media/post-thumbnail-03.jpg"
+              class="opacity-0 group-hover:opacity-75"
+              alt=""
+            />
+            <div
+              class="flex flex-col gap-2 mb-[12px] absolute w-4/5 h-[100%] left-1/2 -translate-x-1/2 top-0 py-[20px] text-[#948daa] group-hover:text-white"
+            >
+              <span
+                class="font-openSans text-[16px] flex gap-1 capitalize items-center order-3"
+              >
+                <i class="font-normal fa fa-timer text-[16px]"></i>
+                <p>October 19, 2023</p>
+              </span>
+              <span
+                class="font-openSans text-[16px] flex gap-1 capitalize items-center order-1"
+              >
+                <i class="font-normal fa fa-folder text-[16px]"></i>
+                <p>Web design</p>
+              </span>
+              <p class="flex font-bold text-[21px] order-2 flex-grow lowercase">
+                <a
+                  href="#"
+                  class="text-white hover:text-[#fd562a] block h-max w-max"
+                  >Design a wesite using Figma easily</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="blog-br relative group">
+            <img
+              src="./media/post-thumbnail-04.jpg"
+              class="opacity-0 group-hover:opacity-75"
+              alt=""
+            />
+            <div
+              class="flex flex-col gap-2 mb-[12px] absolute w-4/5 h-[100%] left-1/2 -translate-x-1/2 top-0 py-[20px] text-[#948daa] group-hover:text-white"
+            >
+              <span
+                class="font-openSans text-[16px] flex gap-1 capitalize items-center order-3"
+              >
+                <i class="font-normal fa fa-timer text-[16px]"></i>
+                <p>October 19, 2023</p>
+              </span>
+              <span
+                class="font-openSans text-[16px] flex gap-1 capitalize items-center order-1"
+              >
+                <i class="font-normal fa fa-folder text-[16px]"></i>
+                <p>Web design</p>
+              </span>
+              <p class="flex font-bold text-[21px] order-2 flex-grow lowercase">
+                <a
+                  href="#"
+                  class="text-white hover:text-[#fd562a] block h-max w-max"
+                  >Break on through to the other side</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="blog-tl relative group">
+            <img
+              src="./media/post-thumbnail-05.jpg"
+              class="opacity-0 group-hover:opacity-75"
+              alt=""
+            />
+            <div
+              class="flex flex-col gap-2 mb-[12px] absolute w-4/5 h-[100%] left-1/2 -translate-x-1/2 top-0 py-[20px] text-[#948daa] group-hover:text-white"
+            >
+              <span
+                class="font-openSans text-[16px] flex gap-1 capitalize items-center order-3"
+              >
+                <i class="font-normal fa fa-timer text-[16px]"></i>
+                <p>October 19, 2023</p>
+              </span>
+              <span
+                class="font-openSans text-[16px] flex gap-1 capitalize items-center order-1"
+              >
+                <i class="font-normal fa fa-folder text-[16px]"></i>
+                <p>Web design</p>
+              </span>
+              <p class="flex font-bold text-[21px] order-2 flex-grow lowercase">
+                <a
+                  href="#"
+                  class="text-white hover:text-[#fd562a] block h-max w-max"
+                  >Imagine there is no heaven</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="blog-bl relative group">
+            <img
+              src="./media/post-thumbnail-06.jpg"
+              class="opacity-0 group-hover:opacity-75"
+              alt=""
+            />
+            <div
+              class="flex flex-col gap-2 mb-[12px] absolute w-4/5 h-[100%] left-1/2 -translate-x-1/2 top-0 py-[20px] text-[#948daa] group-hover:text-white"
+            >
+              <span
+                class="font-openSans text-[16px] flex gap-1 capitalize items-center order-3"
+              >
+                <i class="font-normal fa fa-timer text-[16px]"></i>
+                <p>October 19, 2023</p>
+              </span>
+              <span
+                class="font-openSans text-[16px] flex gap-1 capitalize items-center order-1"
+              >
+                <i class="font-normal fa fa-folder text-[16px]"></i>
+                <p>Web design</p>
+              </span>
+              <p class="flex font-bold text-[21px] order-2 flex-grow lowercase">
+                <a
+                  href="#"
+                  class="text-white hover:text-[#fd562a] block h-max w-max"
+                  >When the musics over turn off the light</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-container bg-[#333333] py-[80px]">
+        <div class="body-container">
+          <div class="Blogslider">
+            <div class="swiper blogSwiper">
+              <div class="swiper-wrapper flex items-center">
+                <div class="swiper-slide blogSlider">
+                  <img src="./media/partner_logo_1.png" alt="" />
+                </div>
+                <div class="swiper-slide blogSlider">
+                  <img src="./media/partner_logo_2.png" alt="" />
+                </div>
+                <div class="swiper-slide blogSlider">
+                  <img src="./media/partner_logo_3.png" alt="" />
+                </div>
+                <div class="swiper-slide blogSlider">
+                  <img src="./media/partner_logo_4.png" alt="" />
+                </div>
+                <div class="swiper-slide blogSlider">
+                  <img src="./media/partner_logo_5.png" alt="" />
+                </div>
+                <div class="swiper-slide blogSlider">
+                  <img src="./media/partner_logo_6.png" alt="" />
+                </div>
+                <div class="swiper-slide blogSlider">
+                  <img src="./media/partner_logo_7.png" alt="" />
+                </div>
+                <div class="swiper-slide blogSlider">
+                  <img src="./media/partner_logo_8.png" alt="" />
+                </div>
+                <div class="swiper-slide blogSlider">
+                  <img src="./media/partner_logo_9.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end blog -->
+    <!-- start contact -->
+    <div
+      id="contactContainer"
+      class="main-container bg-[#222222] p-[100px_0_60px] relative"
+    >
+      <img
+        src="./media/contact-element-1.png"
+        class="floating absolute right-[50px] top-[100px] z-50"
+        alt=""
+      />
+      <img
+        src="./media/contact-element-2.png"
+        class="floating absolute left-[30px] bottom-[-20px] z-50"
+        alt=""
+      />
+      <h6 id="contact"></h6>
+      <div class="body-container">
+        <div class="mx-auto mb-[72px] w-[50%] text-center">
+          <h2 class="text-[24px] text-white mb-[24px] font-bold uppercase">
+            get in touch
+          </h2>
+          <p class="text-[#b0aac0;] text-[20px] font-openSans">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eos,
+            inventore nesciunt eveniet qui.
+          </p>
+        </div>
+        <div class="contactFlex flex w-[100%]">
+          <div class="flex items-center justify-center flex-grow mb-[60px]">
+            <div
+              class="footerflexLogo rounded-full bg-[#fd562a] w-[60px] h-[60px] flex items-center justify-center mr-[24px]"
+            >
+              <span
+                class="fa-thin fa-location-dot text-[24px] text-white"
+              ></span>
+            </div>
+            <div class="flex flex-col">
+              <h4 class="text-white text-[24px] font-bold mb-[8px] capitalize">
+                Address
+              </h4>
+              <p class="text-[#b0aac0] font-openSans text-[18px] capitalize">
+                Tehran Province, Tehran, Azadi St
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center justify-center flex-grow mb-[60px]">
+            <div
+              class="footerflexLogo rounded-full bg-[#fd562a] w-[60px] h-[60px] flex items-center justify-center mr-[24px]"
+            >
+              <span class="fa-thin fa-phone text-[24px] text-white"></span>
+            </div>
+            <div class="flex flex-col">
+              <h4 class="text-white text-[24px] font-bold mb-[8px] capitalize">
+                phone
+              </h4>
+              <a
+                href="tel:02166929920"
+                class="text-[#b0aac0] font-openSans text-[18px] capitalize hover:text-[#fd562a]"
+                >021 6692 9920</a
+              >
+            </div>
+          </div>
+          <div class="flex items-center justify-center flex-grow mb-[60px]">
+            <div
+              class="footerflexLogo rounded-full bg-[#fd562a] w-[60px] h-[60px] flex items-center justify-center mr-[24px]"
+            >
+              <span class="fa-thin fa-envelope text-[24px] text-white"></span>
+            </div>
+            <div class="flex flex-col">
+              <h4 class="text-white text-[24px] font-bold mb-[8px] capitalize">
+                email
+              </h4>
+              <a
+                href="mailto:tehranmft@enghelab.com"
+                class="text-[#b0aac0] font-openSans text-[18px] capitalize hover:text-[#fd562a]"
+                >tehranmft@enghelab.com</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="flex w-[100%] items-stretch">
+          <div class="contactMap w-max mb-[60px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d286.38098646922896!2d51.381716200748514!3d35.70085473548089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00e6853d8785%3A0xd42bcd75d488225c!2sTehran%20Institute%20of%20Technology!5e0!3m2!1sen!2s!4v1697721908564!5m2!1sen!2s"
+              width="600"
+              height="450"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="border-0 mr-[60px] rounded-[10px] overflow-hidden"
+            ></iframe>
+          </div>
+          <div class="flex flex-col flex-grow mb-[60px]">
+            <h2 class="text-[36px] text-white mb-[48px] font-bold">
+              Write me a message
+            </h2>
+            <form
+              class="contactForm flex flex-col w-[100%] h-[100%] justify-between"
+            >
+              <div class="flex w-[100%]">
+                <div class="flex px-[8px] flex-grow mb-[16px]">
+                  <input
+                    type="text"
+                    placeholder="Name*"
+                    class="w-[100%] bg-[#2a2a2a] border outline-none border-[#606060] text-[#948daa] rounded-[5px] p-[12px_18px] font-openSans text-[18px]"
+                    required
+                  />
+                </div>
+                <div class="flex px-[8px] flex-grow mb-[16px]">
+                  <input
+                    type="email"
+                    placeholder="Email*"
+                    class="w-[100%] bg-[#2a2a2a] border outline-none border-[#606060] text-[#948daa] rounded-[5px] p-[12px_18px] font-openSans text-[18px]"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col w-[100%] flex-grow px-[8px]">
+                <textarea
+                  type=""
+                  placeholder="Your message here*"
+                  class="w-[100%] bg-[#2a2a2a] border outline-none border-[#606060] text-[#948daa] rounded-[5px] p-[12px_18px] font-openSans text-[18px] mb-[16px] flex-grow"
+                  required
+                ></textarea>
+                <button
+                  type="submit"
+                  class="bg-[#fb562a] text-white uppercase p-[15px_42px] mr-[48px] text-[18px] rounded-[5px] block hover:bg-[#bf2902] font-bold w-max"
+                >
+                  send message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end contact -->
+    <!-- start footer -->
+    <footer>
+      <div class="main-container h-max footerContainer">
+        <div class="body-container py-[100px] relative">
+          <div class="mx-auto mb-[72px] w-[50%] text-center">
+            <h2
+              class="text-[24px] text-white mb-[24px] font-bold uppercase text-center"
+            >
+              <img
+                src="./media/fungi_logo.png"
+                class="footerLogo block mx-auto"
+                alt=""
+              />
+            </h2>
+            <p class="text-[#b0aac0;] text-[20px] font-openSans">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eos,
+              inventore nesciunt eveniet qui.
+            </p>
+          </div>
+          <div class="flex mb-[16px] justify-center items-center gap-4">
+            <a
+              href="#"
+              class="fa-brands fa-instagram text-white hover:text-[#fd562a] text-[24px]"
+            ></a>
+            <a
+              href="#"
+              class="fa-brands fa-x-twitter text-white hover:text-[#fd562a] text-[24px]"
+            ></a>
+            <a
+              href="#"
+              class="fa-brands fa-youtube text-white hover:text-[#fd562a] text-[24px]"
+            ></a>
+            <a
+              href="#"
+              class="fa-brands fa-telegram text-white hover:text-[#fd562a] text-[24px]"
+            ></a>
+            <a
+              href="#"
+              class="fa-brands fa-linkedin text-white hover:text-[#fd562a] text-[24px]"
+            ></a>
+          </div>
+          <div class="flex w-[100%] justify-between mt-[80px]">
+            <p class="capitalize text-[16px] text-[#b0aac0]">
+              All rights reserved &copy; 2023
+              <a href="#" class="hover:text-[#fd562a]">Ali Eslamdoust</a>
+            </p>
+            <div class="footerLinks flex items-center gap-2 text-[#b0aac0]">
+              <a href="#" class="hover:underline capitalize"
+                >Terms & Condition</a
+              ><a href="#" class="hover:underline capitalize">Privacy Policy</a>
+            </div>
+          </div>
+          <a href="#home" class="top absolute top-0 right-0 -translate-y-1/2 h-[60px] w-[60px] bg-[#fd562a] rounded-full flex items-center justify-center"
+            ><span class="fa-thin fa-arrow-up-from-square text-white text-[24px]"></span
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
     <!-- javascript -->
+    <script src="./swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
     <!-- end javascript -->
   </body>

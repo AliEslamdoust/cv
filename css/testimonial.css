@@ -1,0 +1,30 @@
+div.testimonial {
+  background: url(../media/testimonial-bg.jpg) center no-repeat;
+  background-size: cover; }
+  div.testimonial > div.body-container .swiper {
+    width: 100%;
+    height: calc(max-content + 48px);
+    margin-left: auto;
+    margin-right: auto; }
+  div.testimonial > div.body-container .swiper-slide {
+    padding: unset !important; }
+  div.testimonial > div.body-container div.testImg > img {
+    width: 24px !important; }
+  div.testimonial > div.body-container div.testAbout > img {
+    width: 60px !important; }
+  div.testimonial > div.body-container .slideContainer {
+    position: relative; }
+    div.testimonial > div.body-container .slideContainer::before {
+      content: "";
+      width: 90%;
+      height: 100%;
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+      opacity: .5;
+      border-radius: 10px;
+      z-index: -1; }
+
+/*# sourceMappingURL=testimonial.css.map */
