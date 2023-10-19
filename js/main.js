@@ -80,6 +80,9 @@ var swiper = new Swiper(".testimonialSlider", {
     992: {
       slidesPerView: 2,
     },
+    768: {
+      slidesPerView: 1,
+    },
   },
   spaceBetween: 24,
   loop: true,

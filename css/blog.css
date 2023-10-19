@@ -5,21 +5,21 @@ div.blogGird {
   gap: 24px; }
   div.blogGird * {
     transition: all 0.15s ease; }
-  div.blogGird div.blog-left {
+  div.blogGird a.blog-left {
     grid-column: 1/3;
     grid-row: 1/3; }
-  div.blogGird div.blog-tr {
+  div.blogGird a.blog-tr {
     grid-column: 4;
     grid-row: 1; }
-    div.blogGird div.blog-tr span {
+    div.blogGird a.blog-tr span {
       transition: none; }
-  div.blogGird div.blog-tl {
+  div.blogGird a.blog-tl {
     grid-column: 3;
     grid-row: 1; }
-  div.blogGird div.blog-br {
+  div.blogGird a.blog-br {
     grid-column: 4;
     grid-row: 2; }
-  div.blogGird div.blog-bl {
+  div.blogGird a.blog-bl {
     grid-column: 3;
     grid-row: 2; }
   div.blogGird > * {

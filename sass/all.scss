@@ -53,6 +53,11 @@ $main-font: poppins;
 }
 @media (max-width: 768px) {
   .body-container {
-    width: 93.75%;
+    width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .body-container {
+    width: 90%;
   }
 }

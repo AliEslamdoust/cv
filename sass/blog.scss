@@ -7,26 +7,26 @@ div.blogGird {
   * {
     transition: all 0.15s ease;
   }
-  div.blog-left {
+  a.blog-left {
     grid-column: 1/3;
     grid-row: 1/3;
   }
-  div.blog-tr {
+  a.blog-tr {
     grid-column: 4;
     grid-row: 1;
     span {
       transition: none;
     }
   }
-  div.blog-tl {
+  a.blog-tl {
     grid-column: 3;
     grid-row: 1;
   }
-  div.blog-br {
+  a.blog-br {
     grid-column: 4;
     grid-row: 2;
   }
-  div.blog-bl {
+  a.blog-bl {
     grid-column: 3;
     grid-row: 2;
   }

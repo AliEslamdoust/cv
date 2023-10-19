@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/blog.css" />
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body id="body">
     <h6 id="home"></h6>
@@ -26,54 +27,70 @@
         class="fixed top-0 left-[50%] translate-x-[-50%] py-[24px] main-container h-max z-[1000]"
         id="header"
       >
-        <nav class="flex justify-between items-center body-container">
-          <div class="header-image-container">
+        <nav
+          class="flex justify-between items-center body-container relative xl:flex-nowrap flex-wrap"
+        >
+          <div
+            class="header-image-container xl:block flex justify-between items-center w-[100%]"
+          >
             <a href="#" class="header-image">
               <img
-                class="w-[160px] drop-shadow-[0_0_10px_#222222]"
+                class="w-[108px] xl:w-[160px] drop-shadow-[0_0_10px_#222222]"
                 src="./media/fungi_logo.png"
                 alt=""
               />
             </a>
+            <label
+              for="hamburger"
+              class="fa-light fa-bars text-[24px] text-white hover:text-[#fd562a] p-[8px_16px]"
+            ></label>
           </div>
           <div
-            class="header-menu-container flex items-center flex-grow-[1] h-max justify-end"
+            class="header-menu-container flex items-center flex-grow h-max justify-end"
           >
-            <ul id="headerBtns" class="header-menu flex">
+            <input type="checkbox" name="hamburger" id="hamburger" />
+            <ul
+              id="headerBtns"
+              class="header-menu flex xl:flex-row flex-col xl:bg-transparent bg-white xl:w-auto w-[100%] xl:overflow-visible overflow-hidden xl:h-auto max-h-[calc(100vh_-_100px)] h-0 xl:m-0"
+            >
               <li
-                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+                class="header-menu-item capitalize text-black xl:text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer xl:hover:drop-shadow-[0_0_5px_#222] w-[100%] p-[12px_20px] xl:p-0"
               >
-                <a class="p-[.5rem_1rem]" href="#home">home</a>
+                <a class="xl:p-[8px_16px] w-[100%] block" href="#home">home</a>
               </li>
               <li
-                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+                class="header-menu-item capitalize text-black xl:text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer xl:hover:drop-shadow-[0_0_5px_#222] w-[100%] p-[12px_20px] xl:p-0"
               >
-                <a class="p-[.5rem_1rem]" href="#about">about</a>
+                <a class="xl:p-[8px_16px] w-[100%] block" href="#about">about</a>
               </li>
               <li
-                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+                class="header-menu-item capitalize text-black xl:text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer xl:hover:drop-shadow-[0_0_5px_#222] w-[100%] p-[12px_20px] xl:p-0"
               >
-                <a class="p-[.5rem_1rem]" href="#portfolio">portfolio</a>
+                <a class="xl:p-[8px_16px] w-[100%] block" href="#portfolio"
+                  >portfolio</a
+                >
               </li>
               <li
-                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+                class="header-menu-item capitalize text-black xl:text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer xl:hover:drop-shadow-[0_0_5px_#222] w-[100%] p-[12px_20px] xl:p-0"
               >
-                <a class="p-[.5rem_1rem]" href="#service">service</a>
+                <a class="xl:p-[8px_16px] w-[100%] block" href="#service">service</a>
               </li>
               <li
-                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+                class="header-menu-item capitalize text-black xl:text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer xl:hover:drop-shadow-[0_0_5px_#222] w-[100%] p-[12px_20px] xl:p-0"
               >
-                <a class="p-[.5rem_1rem]" href="#testimonials">testimonials</a>
+                <a class="xl:p-[8px_16px] w-[100%] block" href="#testimonials"
+                  >testimonials</a
+                >
               </li>
               <li
-                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+                class="header-menu-item capitalize text-black xl:text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer xl:hover:drop-shadow-[0_0_5px_#222] w-[100%] p-[12px_20px] xl:p-0"
               >
-                <a class="p-[.5rem_1rem]" href="#blog">blog</a>
+                <a class="xl:p-[8px_16px] w-[100%] block" href="#blog">blog</a>
               </li>
               <li
-                class="header-menu-item capitalize text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer hover:drop-shadow-[0_0_5px_#222]"
+                class="header-menu-item capitalize text-black xl:text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer xl:hover:drop-shadow-[0_0_5px_#222] w-[100%] p-[12px_20px] xl:p-0"
               >
-                <a class="p-[.5rem_1rem]" href="#contact">contact</a>
+                <a class="xl:p-[8px_16px] w-[100%] block" href="#contact">contact</a>
               </li>
             </ul>
           </div>
@@ -84,9 +101,11 @@
     <!-- Start header section -->
     <div
       id="homeContainer"
-      class="header main-container flex items-center overflow-hidden h-[100vh]"
+      class="header main-container flex items-center overflow-hidden xl:h-[100vh] h-max xl:p-0 py-[150px]"
     >
-      <div class="body-container relative flex items-center px-[12px]">
+      <div
+        class="body-container relative flex items-center px-[12px] xl:flex-row flex-col"
+      >
         <img
           src="./media/hero-element-1.png"
           alt=""
@@ -107,65 +126,82 @@
           alt=""
           class="floating absolute right-[-60px] bottom-[60px]"
         />
-        <div class="header-text w-[50%] flex flex-col z-10 px-[12px]">
+        <div
+          class="header-text w-max md:w-4/5 lg:w-3/5 xl:w-[50%] flex flex-col z-10 px-[12px] order-2 xl:order-1 xl:mt-0 mt-[50px]"
+        >
           <h1
-            class="capitalize text-white text-[90px] flex flex-col mb-[8px] font-bold leading-[1.2]"
+            class="capitalize text-white text-[48px] md:text-[60px] xl:text-[90px] flex xl:justify-normal justify-center flex-row flex-wrap xl:flex-col mb-[8px] font-bold leading-[1.2]"
           >
-            <small class="text-[24px] mb-[12px]">Hello, I'm</small>Ali
+            <small
+              class="text-[21px] md:text-[24px] mb-[12px] xl:w-auto w-[100%] xl:text-left text-center"
+              >Hello, I'm</small
+            >Ali&nbsp;
             <strong class="text-[#fd562a]">Eslamdoust</strong>
           </h1>
-          <p class="text-[#b0aac0] text-[24px]">
+          <p class="text-[#b0aac0] text-[18px] md:text-[24px] font-light md:text-left text-center">
             A Passionate <strong>Web Developer</strong> from
             <strong>Tehran!</strong>
           </p>
-          <div class="header-btn flex mt-[32px] items-center">
+          <div
+            class="header-btn flex mt-[32px] items-center relative xl:justify-normal justify-center md:flex-row flex-col"
+          >
+            <img
+              src="./media/hero-element-5.png"
+              class="floatingx absolute left-[-110px] top-3/4"
+              alt=""
+            />
             <a
               href="#"
-              class="bg-[#fb562a] text-white uppercase p-[15px_42px] mr-[48px] text-[18px] rounded-[5px] block hover:bg-[#bf2902] font-bold"
+              class="bg-[#fb562a] text-white uppercase p-[15px_42px] md:mb-0 mb-[30px] md:mr-[48px] text-[16px] md:text-[18px] rounded-[5px] block hover:bg-[#bf2902] font-bold"
               >contact me</a
             >
             <div class="header-link-container flex gap-[20px]">
               <a href="#">
                 <i
-                  class="fab fa-telegram font-normal text-white text-[24px] hover:text-[#fb562a]"
+                  class="fab fa-telegram font-normal text-white text-[21px] md:text-[24px] hover:text-[#fb562a]"
                 ></i>
               </a>
               <a href="#">
                 <i
-                  class="fab fa-x-twitter font-normal text-white text-[24px] hover:text-[#fb562a]"
+                  class="fab fa-x-twitter font-normal text-white text-[21px] md:text-[24px] hover:text-[#fb562a]"
                 ></i>
               </a>
               <a href="#">
                 <i
-                  class="fab fa-linkedin font-normal text-white text-[24px] hover:text-[#fb562a]"
+                  class="fab fa-linkedin font-normal text-white text-[21px] md:text-[24px] hover:text-[#fb562a]"
                 ></i>
               </a>
               <a href="#">
                 <i
-                  class="fab fa-instagram font-normal text-white text-[24px] hover:text-[#fb562a]"
+                  class="fab fa-instagram font-normal text-white text-[21px] md:text-[24px] hover:text-[#fb562a]"
                 ></i>
               </a>
             </div>
           </div>
         </div>
-        <div class="header-image w-[50%] px-[12px]">
+        <div class="header-image w-4/5 md:w-3/5 xl:w-[50%] px-[12px] order-1 xl:order-2">
           <div class="h-image relative flex justify-end">
             <img
-              class="2xl:w-[80%] rounded-[25px] relative"
+              class="w-[100%] xl:w-[80%] rounded-[25px] relative"
               src="./media/profile.jpg"
               alt=""
             />
             <div
-              class="left-span-header p-[18px_24px] absolute rounded-[10px] bg-[#2f2f2f] top-[50px] left-0 translate-x-[20%] z-[20] flex items-center"
+              class="left-span-header p-[18px_24px] absolute rounded-[10px] bg-[#2f2f2f] top-[50px] left-0 xl:translate-x-[20%] translate-x-[-20%] z-[20] flex items-center"
             >
               <div
-                class="lshn-container text-[#fd562a] text-[45px] flex font-bold"
+                class="lshn-container text-[#fd562a] xl:text-[45px] text-[36px] flex font-bold"
               >
                 <p class="leading-[1] flex items-start">
-                  <span>1</span> K<span class="lsh-badge text-[27px]">+</span>
+                  <span>1</span> K<span
+                    class="lsh-badge xl:text-[27px] text-[21px]"
+                    >+</span
+                  >
                 </p>
               </div>
-              <p class="uppercase text-[18px] text-white font-bold ml-[8px]">
+              <p
+                class="uppercase xl:text-[18px] text-[14px] text-white font-bold ml-[8px]"
+              >
                 total<br />projects
               </p>
             </div>
@@ -173,13 +209,16 @@
               class="right-span-header p-[18px_24px] absolute rounded-[10px] bg-[#2f2f2f] bottom-[50px] right-[-50px] z-[20] flex items-center"
             >
               <div
-                class="lshn-container text-[#fd562a] text-[45px] flex font-bold"
+                class="lshn-container text-[#fd562a] xl:text-[45px] text-[36px] flex font-bold"
               >
                 <p class="leading-[1] flex items-start">
-                  <span>100</span> <span class="lsh-badge text-[27px]">+</span>
+                  <span>100</span>
+                  <span class="lsh-badge xl:text-[27px] text-[21px]">+</span>
                 </p>
               </div>
-              <p class="uppercase text-[18px] text-white font-bold ml-[8px]">
+              <p
+                class="uppercase xl:text-[18px] text-[14px] text-white font-bold ml-[8px]"
+              >
                 worlwide<br />clients
               </p>
             </div>
@@ -193,7 +232,9 @@
     <div id="aboutContainer" class="main-container h-max">
       <div class="about-intro h-max bg-[#222] w-[100%] relative">
         <div class="body-container p-[50px_0_60px]">
-          <div class="about-text mx-auto mb-[72px] w-[50%] text-center">
+          <div
+            class="about-text mx-auto mb-[72px] w-[80%] lg:w-[70%] xl:w-[50%] text-center"
+          >
             <h2 class="text-[24px] text-white mb-[24px] font-bold">
               WELCOME TO MY WORLD
             </h2>
@@ -203,9 +244,11 @@
             </p>
           </div>
           <div
-            class="about-container flex w-[100%] justify-between items-stretch"
+            class="about-container flex w-[100%] justify-center md:justify-between items-stretch xl:flex-nowrap flex-wrap"
           >
-            <div class="about w-[32%] mb-[60px]">
+            <div
+              class="about w-[100%] lg:w-[calc(50%_-_12px)] xl:w-[32%] xl:mb-[60px] mb-[24px]"
+            >
               <div
                 class="p-[48px] w-[100%] bg-[#2f2f2f] rounded-[10px] flex flex-col"
               >
@@ -223,7 +266,9 @@
                 </p>
               </div>
             </div>
-            <div class="about w-[32%] mb-[60px]">
+            <div
+              class="about w-[100%] lg:w-[calc(50%_-_12px)] xl:w-[32%] xl:mb-[60px] mb-[24px]"
+            >
               <div
                 class="p-[48px] w-[100%] bg-[#2f2f2f] rounded-[10px] flex flex-col"
               >
@@ -241,7 +286,9 @@
                 </p>
               </div>
             </div>
-            <div class="about w-[32%] mb-[60px]">
+            <div
+              class="about w-[100%] lg:w-[calc(50%_-_12px)] xl:w-[32%] xl:mb-[60px] mb-[24px]"
+            >
               <div
                 class="p-[48px] w-[100%] bg-[#2f2f2f] rounded-[10px] flex flex-col"
               >
@@ -267,6 +314,7 @@
           alt=""
         />
       </div>
+      <!-- second part of about section -->
       <div class="main-about w-[100%] bg-[#2a2a2a] relative">
         <img
           src="./media/about-element-1.png"
@@ -278,8 +326,10 @@
           class="floating absolute left-[50px] bottom-[-36px]"
           alt=""
         />
-        <div class="body-container p-[120px_0_140px] flex items-stretch">
-          <div class="about-img w-[50%] relative px-[12px]">
+        <div
+          class="body-container p-[120px_0_140px] flex md:items-stretch xl:flex-row flex-col items-center"
+        >
+          <div class="about-img w-[70%] lg:w-[50%] relative px-[12px] xl:mb-0 mb-[250px]">
             <div
               class="about-img-top relative w-[100%] h-max flex items-center justify-center gap-x-4"
             >
@@ -303,7 +353,7 @@
               </div>
             </div>
           </div>
-          <div class="about-text w-[50%] flex flex-col px-[12px]">
+          <div class="about-text w-[100%] xl:w-[50%] flex flex-col px-[12px]">
             <h2
               class="capitalize text-[48px] mb-[30px] font-bold text-white leading-[1.2]"
             >
@@ -321,7 +371,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
               nisi dolorum accusantium.
             </p>
-            <div class="about-me flex w-[100%] mb-[32px]">
+            <div class="about-me flex w-[100%] mb-[32px] md:flex-row flex-col md:gap-0 gap-[12px]">
               <div class="flex flex-col gap-[12px] px-[12px] flex-grow">
                 <div class="leading-[1.5]">
                   <h4 class="uppercase text-[16px] text-white font-bold">
@@ -396,8 +446,10 @@
         </div>
       </div>
       <div class="skills w-[100%] p-[120px_0_60px] flex">
-        <div class="body-container flex items-stretch">
-          <div class="flex flex-col w-[50%] mb-[60px] p-[0_72px_0_12px]">
+        <div class="body-container flex items-stretch xl:flex-row flex-col">
+          <div
+            class="flex flex-col w-[100%] xl:w-[50%] mb-[60px] p-[0_72px_0_12px]"
+          >
             <h4
               class="mb-[36px] leading-[1.2] font-bold text-[48px] text-white"
             >
@@ -412,7 +464,7 @@
               doloremque soluta itaque?
             </p>
           </div>
-          <div class="flex flex-col w-[50%] mt-[30px]">
+          <div class="flex flex-col w-[100%] xl:w-[50%] mt-[30px]">
             <div class="flex flex-col w-[100%] mb-[24px]">
               <div
                 class="progress-text flex items-center justify-between mb-[12px]"
@@ -491,7 +543,7 @@
       class="main-container h-max p-[120px_0_100px] bg-[#222222] portfolio relative"
     >
       <div class="body-container h-max">
-        <div class="mx-auto mb-[72px] w-[50%] text-center">
+        <div class="mx-auto mb-[72px] w-[80%] lg:w-[70%] xl:w-[50%] text-center">
           <h2 class="text-[24px] text-white mb-[24px] font-bold">PORTFOLIO</h2>
           <p class="text-[#b0aac0;] text-[20px] font-openSans">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. In maxime
@@ -527,8 +579,8 @@
             >Design</label
           >
         </div>
-        <div class="portfolio-items flex flex-wrap w-[100%] items-stretch">
-          <div class="w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css">
+        <div class="portfolio-items flex flex-wrap w-[100%] md:items-stretch md:flex-row flex-col items-center">
+          <div class="w-[80%] md:w-[calc((100%_-_24px)_/_2)] lg:w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css">
             <div
               class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
             >
@@ -558,7 +610,7 @@
               </div>
             </div>
           </div>
-          <div class="w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css">
+          <div class="w-[80%] md:w-[calc((100%_-_24px)_/_2)] lg:w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css">
             <div
               class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
             >
@@ -589,7 +641,7 @@
             </div>
           </div>
           <div
-            class="w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] wordpress"
+            class="w-[80%] md:w-[calc((100%_-_24px)_/_2)] lg:w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] wordpress"
           >
             <div
               class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
@@ -620,7 +672,7 @@
               </div>
             </div>
           </div>
-          <div class="w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css">
+          <div class="w-[80%] md:w-[calc((100%_-_24px)_/_2)] lg:w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css">
             <div
               class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
             >
@@ -650,7 +702,7 @@
               </div>
             </div>
           </div>
-          <div class="w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] design">
+          <div class="w-[80%] md:w-[calc((100%_-_24px)_/_2)] lg:w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] design">
             <div
               class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
             >
@@ -680,7 +732,7 @@
               </div>
             </div>
           </div>
-          <div class="w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css">
+          <div class="w-[80%] md:w-[calc((100%_-_24px)_/_2)] lg:w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css">
             <div
               class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
             >
@@ -731,7 +783,7 @@
     >
       <h6 id="service"></h6>
       <div class="body-container h-max">
-        <div class="mx-auto mb-[72px] w-[50%] text-center">
+        <div class="mx-auto mb-[72px] w-[80%] lg:w-[70%] xl:w-[50%] text-center">
           <h2 class="text-[24px] text-white mb-[24px] font-bold uppercase">
             service
           </h2>
@@ -741,9 +793,11 @@
           </p>
         </div>
         <div class="serviceFlex flex flex-wrap w-100 items-stretch">
-          <div class="px-[12px] mb-[24px] w-[calc((100%_-_48px)_/_3)]">
+          <div
+            class="px-[12px] mb-[24px] xl:w-[calc((100%_-_48px)_/_3)] w-[100%] lg:w-[calc((100%_-_24px)_/_2)]"
+          >
             <div
-              class="group service flex flex-col p-[60px_48px] text-{18px} text-white rounded-[10px] w-[100%] text-center hover:bg-[#3c3c3c] h-[100%]"
+              class="group service flex flex-col p-[60px_48px] text-[18px] text-white rounded-[10px] w-[100%] text-center hover:bg-[#3c3c3c] h-[100%]"
             >
               <div
                 class="serviceLogo rounded-full bg-[#474747] mb-[30px] h-[96px] w-[96px] flex items-center justify-center mx-auto text-[#fd562a] group-hover:bg-[#fd562a] group-hover:text-white transition-none"
@@ -762,9 +816,11 @@
               </p>
             </div>
           </div>
-          <div class="px-[12px] mb-[24px] w-[calc((100%_-_48px)_/_3)]">
+          <div
+            class="px-[12px] mb-[24px] xl:w-[calc((100%_-_48px)_/_3)] w-[100%] lg:w-[calc((100%_-_24px)_/_2)]"
+          >
             <div
-              class="group service flex flex-col p-[60px_48px] text-{18px} text-white rounded-[10px] w-[100%] text-center hover:bg-[#3c3c3c] h-[100%]"
+              class="group service flex flex-col p-[60px_48px] text-[18px] text-white rounded-[10px] w-[100%] text-center hover:bg-[#3c3c3c] h-[100%]"
             >
               <div
                 class="serviceLogo rounded-full bg-[#474747] mb-[30px] h-[96px] w-[96px] flex items-center justify-center mx-auto text-[#fd562a] group-hover:bg-[#fd562a] group-hover:text-white transition-none"
@@ -781,9 +837,11 @@
               </p>
             </div>
           </div>
-          <div class="px-[12px] mb-[24px] w-[calc((100%_-_48px)_/_3)]">
+          <div
+            class="px-[12px] mb-[24px] xl:w-[calc((100%_-_48px)_/_3)] w-[100%] lg:w-[calc((100%_-_24px)_/_2)]"
+          >
             <div
-              class="group service flex flex-col p-[60px_48px] text-{18px} text-white rounded-[10px] w-[100%] text-center hover:bg-[#3c3c3c] h-[100%]"
+              class="group service flex flex-col p-[60px_48px] text-[18px] text-white rounded-[10px] w-[100%] text-center hover:bg-[#3c3c3c] h-[100%]"
             >
               <div
                 class="serviceLogo rounded-full bg-[#474747] mb-[30px] h-[96px] w-[96px] flex items-center justify-center mx-auto text-[#fd562a] group-hover:bg-[#fd562a] group-hover:text-white transition-none"
@@ -803,9 +861,11 @@
               </p>
             </div>
           </div>
-          <div class="px-[12px] mb-[24px] w-[calc((100%_-_48px)_/_3)]">
+          <div
+            class="px-[12px] mb-[24px] xl:w-[calc((100%_-_48px)_/_3)] w-[100%] lg:w-[calc((100%_-_24px)_/_2)]"
+          >
             <div
-              class="group service flex flex-col p-[60px_48px] text-{18px} text-white rounded-[10px] w-[100%] text-center hover:bg-[#3c3c3c] h-[100%]"
+              class="group service flex flex-col p-[60px_48px] text-[18px] text-white rounded-[10px] w-[100%] text-center hover:bg-[#3c3c3c] h-[100%]"
             >
               <div
                 class="serviceLogo rounded-full bg-[#474747] mb-[30px] h-[96px] w-[96px] flex items-center justify-center mx-auto text-[#fd562a] group-hover:bg-[#fd562a] group-hover:text-white transition-none"
@@ -822,9 +882,11 @@
               </p>
             </div>
           </div>
-          <div class="px-[12px] mb-[24px] w-[calc((100%_-_48px)_/_3)]">
+          <div
+            class="px-[12px] mb-[24px] xl:w-[calc((100%_-_48px)_/_3)] w-[100%] lg:w-[calc((100%_-_24px)_/_2)]"
+          >
             <div
-              class="group service flex flex-col p-[60px_48px] text-{18px} text-white rounded-[10px] w-[100%] text-center hover:bg-[#3c3c3c] h-[100%]"
+              class="group service flex flex-col p-[60px_48px] text-[18px] text-white rounded-[10px] w-[100%] text-center hover:bg-[#3c3c3c] h-[100%]"
             >
               <div
                 class="serviceLogo rounded-full bg-[#474747] mb-[30px] h-[96px] w-[96px] flex items-center justify-center mx-auto text-[#fd562a] group-hover:bg-[#fd562a] group-hover:text-white transition-none"
@@ -843,9 +905,11 @@
               </p>
             </div>
           </div>
-          <div class="px-[12px] mb-[24px] w-[calc((100%_-_48px)_/_3)]">
+          <div
+            class="px-[12px] mb-[24px] xl:w-[calc((100%_-_48px)_/_3)] w-[100%] lg:w-[calc((100%_-_24px)_/_2)]"
+          >
             <div
-              class="group service flex flex-col p-[60px_48px] text-{18px} text-white rounded-[10px] w-[100%] text-center hover:bg-[#3c3c3c] h-[100%]"
+              class="group service flex flex-col p-[60px_48px] text-[18px] text-white rounded-[10px] w-[100%] text-center hover:bg-[#3c3c3c] h-[100%]"
             >
               <div
                 class="serviceLogo rounded-full bg-[#474747] mb-[30px] h-[96px] w-[96px] flex items-center justify-center mx-auto text-[#fd562a] group-hover:bg-[#fd562a] group-hover:text-white transition-none"
@@ -882,11 +946,12 @@
         alt=""
       />
     </div>
+    <!-- end service -->
     <!-- start testimonial -->
     <div class="main-container testimonial h-max relative">
       <h6 id="testimonials"></h6>
       <div id="testimonialsContainer" class="body-container p-[120px_0_100px]">
-        <div class="mx-auto mb-[72px] w-[50%] text-center">
+        <div class="mx-auto mb-[72px] w-[70%] xl:w-[50%] text-center">
           <h2 class="text-[24px] text-white mb-[24px] font-bold uppercase">
             testimonials
           </h2>
@@ -1215,7 +1280,7 @@
           class="floating absolute right-0 translate-x-1/2 bottom-[50px] z-50"
           alt=""
         />
-        <div class="mx-auto mb-[72px] w-[50%] text-center">
+        <div class="mx-auto mb-[72px] w-[70%] xl:w-[50%] text-center">
           <h2 class="text-[24px] text-white mb-[24px] font-bold uppercase">
             blog
           </h2>
@@ -1225,7 +1290,7 @@
           </p>
         </div>
         <div class="blogGird w-[100%]">
-          <div class="bg-white blog-left group relative">
+          <a href="#" class="bg-white blog-left group relative">
             <img
               class="brightness-75 group-hover:brightness-50"
               src="./media/post-thumbnail-01.jpg"
@@ -1248,133 +1313,133 @@
                   <p>Web design</p>
                 </span>
               </div>
-              <a
-                href="#"
-                class="flex text-white font-bold text-[30px] hover:text-[#fd562a] lowercase"
-                >Javascript algorythm and data structure for beginners</a
+              <div
+                class="flex text-white font-bold text-[24px] xl:text-[30px] hover:text-[#fd562a] lowercase"
               >
+                Javascript algorythm and data structure for beginners
+              </div>
             </div>
-          </div>
-          <div class="blog-tr relative group">
+          </a>
+          <a href="#" class="blog-tr relative group">
             <img
               src="./media/post-thumbnail-03.jpg"
-              class="opacity-0 group-hover:opacity-75"
+              class="opacity-100 xl:opacity-0 xl:brightness-100 brightness-50 group-hover:opacity-75"
               alt=""
             />
             <div
-              class="flex flex-col gap-2 mb-[12px] absolute w-4/5 h-[100%] left-1/2 -translate-x-1/2 top-0 py-[20px] text-[#948daa] group-hover:text-white"
+              class="flex md:flex-col flex-wrap gap-2 md:mb-[12px] absolute w-4/5 md:h-[100%] left-1/2 -translate-x-1/2 md:top-0 bottom-0 p-[20px_0_60px] md:py-[20px] text-white md:text-[#948daa] md:group-hover:text-white"
             >
               <span
-                class="font-openSans text-[16px] flex gap-1 capitalize items-center order-3"
+                class="font-openSans text-[16px] flex gap-1 capitalize items-center md:order-3"
               >
                 <i class="font-normal fa fa-timer text-[16px]"></i>
                 <p>October 19, 2023</p>
               </span>
               <span
-                class="font-openSans text-[16px] flex gap-1 capitalize items-center order-1"
+                class="font-openSans text-[16px] flex gap-1 capitalize items-center md:order-1"
               >
                 <i class="font-normal fa fa-folder text-[16px]"></i>
                 <p>Web design</p>
               </span>
-              <p class="flex font-bold text-[21px] order-2 flex-grow lowercase">
-                <a
-                  href="#"
-                  class="text-white hover:text-[#fd562a] block h-max w-max"
-                  >Design a wesite using Figma easily</a
-                >
-              </p>
+              <div
+                class="flex font-bold text-[24px] md:text-[18px] xl:text-[21px] md:order-2 md:flex-grow lowercase w-[100%]"
+              >
+                <p class="text-white hover:text-[#fd562a] block h-max w-max">
+                  Design a wesite using Figma easily
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="blog-br relative group">
+          </a>
+          <a href="#" class="blog-br relative group">
             <img
               src="./media/post-thumbnail-04.jpg"
-              class="opacity-0 group-hover:opacity-75"
+              class="opacity-100 xl:opacity-0 xl:brightness-100 brightness-50 group-hover:opacity-75"
               alt=""
             />
             <div
-              class="flex flex-col gap-2 mb-[12px] absolute w-4/5 h-[100%] left-1/2 -translate-x-1/2 top-0 py-[20px] text-[#948daa] group-hover:text-white"
+              class="flex md:flex-col flex-wrap gap-2 md:mb-[12px] absolute w-4/5 md:h-[100%] left-1/2 -translate-x-1/2 md:top-0 bottom-0 p-[20px_0_60px] md:py-[20px] text-white md:text-[#948daa] md:group-hover:text-white"
             >
               <span
-                class="font-openSans text-[16px] flex gap-1 capitalize items-center order-3"
+                class="font-openSans text-[16px] flex gap-1 capitalize items-center md:order-3"
               >
                 <i class="font-normal fa fa-timer text-[16px]"></i>
                 <p>October 19, 2023</p>
               </span>
               <span
-                class="font-openSans text-[16px] flex gap-1 capitalize items-center order-1"
+                class="font-openSans text-[16px] flex gap-1 capitalize items-center md:order-1"
               >
                 <i class="font-normal fa fa-folder text-[16px]"></i>
                 <p>Web design</p>
               </span>
-              <p class="flex font-bold text-[21px] order-2 flex-grow lowercase">
-                <a
-                  href="#"
-                  class="text-white hover:text-[#fd562a] block h-max w-max"
-                  >Break on through to the other side</a
-                >
-              </p>
+              <div
+                class="flex font-bold text-[24px] md:text-[18px] xl:text-[21px] md:order-2 md:flex-grow lowercase w-[100%]"
+              >
+                <p class="text-white hover:text-[#fd562a] block h-max w-max">
+                  Break on through to the other side
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="blog-tl relative group">
+          </a>
+          <a href="#" class="blog-tl relative group">
             <img
               src="./media/post-thumbnail-05.jpg"
-              class="opacity-0 group-hover:opacity-75"
+              class="opacity-100 xl:opacity-0 xl:brightness-100 brightness-50 group-hover:opacity-75"
               alt=""
             />
             <div
-              class="flex flex-col gap-2 mb-[12px] absolute w-4/5 h-[100%] left-1/2 -translate-x-1/2 top-0 py-[20px] text-[#948daa] group-hover:text-white"
+              class="flex md:flex-col flex-wrap gap-2 md:mb-[12px] absolute w-4/5 md:h-[100%] left-1/2 -translate-x-1/2 md:top-0 bottom-0 p-[20px_0_60px] md:py-[20px] text-white md:text-[#948daa] md:group-hover:text-white"
             >
               <span
-                class="font-openSans text-[16px] flex gap-1 capitalize items-center order-3"
+                class="font-openSans text-[16px] flex gap-1 capitalize items-center md:order-3"
               >
                 <i class="font-normal fa fa-timer text-[16px]"></i>
                 <p>October 19, 2023</p>
               </span>
               <span
-                class="font-openSans text-[16px] flex gap-1 capitalize items-center order-1"
+                class="font-openSans text-[16px] flex gap-1 capitalize items-center md:order-1"
               >
                 <i class="font-normal fa fa-folder text-[16px]"></i>
                 <p>Web design</p>
               </span>
-              <p class="flex font-bold text-[21px] order-2 flex-grow lowercase">
-                <a
-                  href="#"
-                  class="text-white hover:text-[#fd562a] block h-max w-max"
-                  >Imagine there is no heaven</a
-                >
-              </p>
+              <div
+                class="flex font-bold text-[24px] md:text-[18px] xl:text-[21px] md:order-2 md:flex-grow lowercase w-[100%]"
+              >
+                <p class="text-white hover:text-[#fd562a] block h-max w-max">
+                  Imagine there is no heaven
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="blog-bl relative group">
+          </a>
+          <a href="#" class="blog-bl relative group">
             <img
               src="./media/post-thumbnail-06.jpg"
-              class="opacity-0 group-hover:opacity-75"
+              class="opacity-100 xl:opacity-0 xl:brightness-100 brightness-50 group-hover:opacity-75"
               alt=""
             />
             <div
-              class="flex flex-col gap-2 mb-[12px] absolute w-4/5 h-[100%] left-1/2 -translate-x-1/2 top-0 py-[20px] text-[#948daa] group-hover:text-white"
+              class="flex md:flex-col flex-wrap gap-2 md:mb-[12px] absolute w-4/5 md:h-[100%] left-1/2 -translate-x-1/2 md:top-0 bottom-0 p-[20px_0_60px] md:py-[20px] text-white md:text-[#948daa] md:group-hover:text-white"
             >
               <span
-                class="font-openSans text-[16px] flex gap-1 capitalize items-center order-3"
+                class="font-openSans text-[16px] flex gap-1 capitalize items-center md:order-3"
               >
                 <i class="font-normal fa fa-timer text-[16px]"></i>
                 <p>October 19, 2023</p>
               </span>
               <span
-                class="font-openSans text-[16px] flex gap-1 capitalize items-center order-1"
+                class="font-openSans text-[16px] flex gap-1 capitalize items-center md:order-1"
               >
                 <i class="font-normal fa fa-folder text-[16px]"></i>
                 <p>Web design</p>
               </span>
-              <p class="flex font-bold text-[21px] order-2 flex-grow lowercase">
-                <a
-                  href="#"
-                  class="text-white hover:text-[#fd562a] block h-max w-max"
-                  >When the musics over turn off the light</a
-                >
-              </p>
+              <div
+                class="flex font-bold text-[24px] md:text-[18px] xl:text-[21px] md:order-2 md:flex-grow lowercase w-[100%]"
+              >
+                <p class="text-white hover:text-[#fd562a] block h-max w-max">
+                  When the musics over turn off the light
+                </p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <div class="main-container bg-[#333333] py-[80px]">
@@ -1433,7 +1498,7 @@
       />
       <h6 id="contact"></h6>
       <div class="body-container">
-        <div class="mx-auto mb-[72px] w-[50%] text-center">
+        <div class="mx-auto mb-[72px] w-[80%] lg:w-[70%] xl:w-[50%] text-center">
           <h2 class="text-[24px] text-white mb-[24px] font-bold uppercase">
             get in touch
           </h2>
@@ -1442,7 +1507,7 @@
             inventore nesciunt eveniet qui.
           </p>
         </div>
-        <div class="contactFlex flex w-[100%]">
+        <div class="contactFlex flex w-[100%] lg:flex-row flex-col items-start">
           <div class="flex items-center justify-center flex-grow mb-[60px]">
             <div
               class="footerflexLogo rounded-full bg-[#fd562a] w-[60px] h-[60px] flex items-center justify-center mr-[24px]"
@@ -1495,19 +1560,22 @@
             </div>
           </div>
         </div>
-        <div class="flex w-[100%] items-stretch">
-          <div class="contactMap w-max mb-[60px]">
+        <div
+          class="flex w-[100%] items-center xl:items-stretch xl:flex-nowrap xl:flex-row flex-col flex-wrap ju"
+        >
+          <div class="contactMap w-[100%] md:w-max mb-[60px]">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d286.38098646922896!2d51.381716200748514!3d35.70085473548089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00e6853d8785%3A0xd42bcd75d488225c!2sTehran%20Institute%20of%20Technology!5e0!3m2!1sen!2s!4v1697721908564!5m2!1sen!2s"
-              width="600"
               height="450"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              class="border-0 mr-[60px] rounded-[10px] overflow-hidden"
+              class="border-0 xl:mr-[60px] rounded-[10px] overflow-hidden md:w-[600px] w-[100%]"
             ></iframe>
           </div>
-          <div class="flex flex-col flex-grow mb-[60px]">
+          <div
+            class="flex flex-col flex-grow mb-[60px] xl:w-auto w-[100%] xl:items-start items-center"
+          >
             <h2 class="text-[36px] text-white mb-[48px] font-bold">
               Write me a message
             </h2>
@@ -1536,12 +1604,12 @@
                 <textarea
                   type=""
                   placeholder="Your message here*"
-                  class="w-[100%] bg-[#2a2a2a] border outline-none border-[#606060] text-[#948daa] rounded-[5px] p-[12px_18px] font-openSans text-[18px] mb-[16px] flex-grow"
+                  class="w-[100%] xl:min-h-auto min-h-[200px] bg-[#2a2a2a] border outline-none border-[#606060] text-[#948daa] rounded-[5px] p-[12px_18px] font-openSans text-[18px] mb-[16px] flex-grow"
                   required
                 ></textarea>
                 <button
                   type="submit"
-                  class="bg-[#fb562a] text-white uppercase p-[15px_42px] mr-[48px] text-[18px] rounded-[5px] block hover:bg-[#bf2902] font-bold w-max"
+                  class="bg-[#fb562a] text-white uppercase p-[15px_42px] mr-[48px] text-[18px] rounded-[5px] block hover:bg-[#bf2902] font-bold xl:w-max w-[100%]"
                 >
                   send message
                 </button>
@@ -1556,7 +1624,7 @@
     <footer>
       <div class="main-container h-max footerContainer">
         <div class="body-container py-[100px] relative">
-          <div class="mx-auto mb-[72px] w-[50%] text-center">
+          <div class="mx-auto mb-[72px] w-[90%] md:w-[80%] lg:w-[70%] xl:w-[50%] text-center">
             <h2
               class="text-[24px] text-white mb-[24px] font-bold uppercase text-center"
             >
@@ -1593,7 +1661,7 @@
               class="fa-brands fa-linkedin text-white hover:text-[#fd562a] text-[24px]"
             ></a>
           </div>
-          <div class="flex w-[100%] justify-between mt-[80px]">
+          <div class="flex w-[100%] items-center flex-col md:flex-row md:justify-between mt-[80px] md:gap-0 gap-[20px]">
             <p class="capitalize text-[16px] text-[#b0aac0]">
               All rights reserved &copy; 2023
               <a href="#" class="hover:text-[#fd562a]">Ali Eslamdoust</a>
@@ -1604,8 +1672,12 @@
               ><a href="#" class="hover:underline capitalize">Privacy Policy</a>
             </div>
           </div>
-          <a href="#home" class="top absolute top-0 right-0 -translate-y-1/2 h-[60px] w-[60px] bg-[#fd562a] rounded-full flex items-center justify-center"
-            ><span class="fa-thin fa-arrow-up-from-square text-white text-[24px]"></span
+          <a
+            href="#home"
+            class="top absolute top-0 right-[20px] xl:right-0 -translate-y-1/2 h-[60px] w-[60px] bg-[#fd562a] rounded-full flex items-center justify-center"
+            ><span
+              class="fa-thin fa-arrow-up-from-square text-white text-[24px]"
+            ></span
           ></a>
         </div>
       </div>

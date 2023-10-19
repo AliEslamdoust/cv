@@ -5,7 +5,7 @@ div.header {
 nav.body-container {
   height: max-content !important;
   * {
-    transition: color 0.15s ease;
+    transition: all 0.15s ease;
   }
   li.active {
     color: #fd562a !important;
@@ -18,19 +18,19 @@ img.floatingx {
   animation: floatingX 5s infinite;
 }
 div.h-image {
-    &::before {
-      content: "";
-      height: 328px;
-      width: 612px;
-      background: #fd562a;
-      border-radius: 10px;
-      position: absolute;
-      right: 20px;
-      top:  100px;
-      transform: rotate(-35deg);
-      animation: rotatez 8s infinite;
-      transform-origin: top;
-    }
+  &::before {
+    content: "";
+    height: 328px;
+    width: 612px;
+    background: #fd562a;
+    border-radius: 10px;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    transform: rotate(-35deg);
+    animation: rotatez 8s infinite;
+    transform-origin: top;
+  }
   > img {
     aspect-ratio: 4/5;
     object-fit: contain;
@@ -69,4 +69,10 @@ div.h-image {
   100% {
     transform: translatex(0);
   }
+}
+input[type="checkbox"] {
+  display: none;
+}
+label{
+  display: none !important;
 }

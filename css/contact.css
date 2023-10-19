@@ -2,4 +2,7 @@ form.contactForm input::placeholder {
   color: #b0aac0 !important;
   font-size: 16px !important; }
 
+iframe {
+  max-width: 100% !important; }
+
 /*# sourceMappingURL=contact.css.map */
