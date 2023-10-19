@@ -12,13 +12,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const header = document.getElementById("about");
     let headerRect = header.getBoundingClientRect();
     let distancefromTop = headerRect.top;
-    var headerMenu = document.getElementById("header");
+    const headerMenu = document.getElementById("header");
+    const headerLogo = document.getElementById("headerLogoImg");
     if (distancefromTop <= 70) {
       headerMenu.style.padding = "12px 0 12px 0";
       headerMenu.style.backgroundColor = "#222222";
+      headerLogo.style.width = "108px";
     } else {
       headerMenu.style.padding = "24px 0 24px 0";
       headerMenu.style.backgroundColor = "transparent";
+      headerLogo.style.width = "160px";
     }
   }
   function scrollSpy() {
@@ -30,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
       serviceContainer,
       testimonialsContainer,
       blogContainer,
-      contactContainer
+      contactContainer,
     ] = [
       document.getElementById("homeContainer"),
       document.getElementById("aboutContainer"),
@@ -38,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("serviceContainer"),
       document.getElementById("testimonialsContainer"),
       document.getElementById("blogContainer"),
-      document.getElementById("contactContainer")
+      document.getElementById("contactContainer"),
     ];
     const containers = [
       homeContainer,
@@ -47,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
       serviceContainer,
       testimonialsContainer,
       blogContainer,
-      contactContainer
+      contactContainer,
     ];
     for (i in containers) {
       scrollSituation(containers[i], ++i);
@@ -104,20 +107,44 @@ var swiper = new Swiper(".testimonialSlider", {
 var swiper = new Swiper(".blogSwiper", {
   slidesPerView: 2,
   breakpoints: {
-    1200:{
+    1200: {
       slidesPerView: 6,
     },
-    992:{
-      slidesPerView: 4, 
+    992: {
+      slidesPerView: 4,
     },
-    576:{
-      slidesPerView: 3
+    576: {
+      slidesPerView: 3,
     },
-   },
+  },
   spaceBetween: 24,
   loop: true,
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
   },
+});
+
+// dark mode
+if (
+  localStorage.theme === "dark" ||
+  (!("theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  document.documentElement.classList.add("dark");
+} else {
+  document.documentElement.classList.remove("dark");
+}
+
+localStorage.theme = "light";
+
+localStorage.theme = "dark";
+
+localStorage.removeItem("theme");
+
+// darkmode toggle
+const darkBtn = document.getElementById("darkBtn");
+btn.addEventListener("click", () => {
+  const html = document.getElementById("html");
+  html.classList.toggle("dark");
 });
