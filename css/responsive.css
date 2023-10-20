@@ -76,5 +76,15 @@
     div.blogGird a.blog-bl {
       grid-column: 1;
       grid-row: 4; } }
+@media (max-width: 576px) {
+  div.h-image::before {
+    content: "";
+    height: 200px;
+    width: 250px;
+    right: calc(50% - 70px);
+    top: calc(50% - 100px); } }
+@media (max-width: 370px) {
+  p.header-text {
+    font-size: 14px; } }
 
 /*# sourceMappingURL=responsive.css.map */
