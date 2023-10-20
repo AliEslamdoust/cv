@@ -15,13 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const headerMenu = document.getElementById("header");
     const headerLogo = document.getElementById("headerLogoImg");
     if (distancefromTop <= 70) {
-      headerMenu.style.padding = "12px 0 12px 0";
-      headerMenu.style.backgroundColor = "#222222";
-      headerLogo.style.width = "108px";
+      headerMenu.classList.add("header-after");
+      headerLogo.classList.add("logo-after");
     } else {
-      headerMenu.style.padding = "24px 0 24px 0";
-      headerMenu.style.backgroundColor = "transparent";
-      headerLogo.style.width = "160px";
+      headerMenu.classList.remove("header-after");
+      headerLogo.classList.remove("logo-after");
     }
   }
   function scrollSpy() {
@@ -144,7 +142,7 @@ localStorage.removeItem("theme");
 
 // darkmode toggle
 const darkBtn = document.getElementById("darkBtn");
-btn.addEventListener("click", () => {
+darkBtn.addEventListener("click", () => {
   const html = document.getElementById("html");
   html.classList.toggle("dark");
 });

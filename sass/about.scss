@@ -19,22 +19,23 @@ div.about {
   > div {
     position: relative;
     z-index: 4;
+  border: 1px solid #222;
   }
 }
 div.about-img {
-     img.img-1 {
-      aspect-ratio: 4/5;
-      object-fit: cover;
-    }
-     img.img-2 {
-      aspect-ratio: 9/10;
-      object-fit: cover;
-    }
+  img.img-1 {
+    aspect-ratio: 4/5;
+    object-fit: cover;
+  }
+  img.img-2 {
+    aspect-ratio: 9/10;
+    object-fit: cover;
+  }
 }
 div.empty-rect {
   border: 5px solid #fd562a;
 }
-div.skills{
-    background: url(../media/skill-bg.jpg) center no-repeat;
-    background-size: cover;
+div.skills {
+  background: url(../media/skill-bg.jpg) center no-repeat;
+  background-size: cover;
 }

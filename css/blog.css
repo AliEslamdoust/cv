@@ -23,7 +23,8 @@ div.blogGird {
     grid-column: 3;
     grid-row: 2; }
   div.blogGird > * {
-    border: 1px solid #ffffff34;
+    border-width: 1px;
+    border-style: solid;
     border-radius: 10px;
     overflow: hidden; }
     div.blogGird > * > img {

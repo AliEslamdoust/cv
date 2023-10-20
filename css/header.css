@@ -56,7 +56,7 @@ div.h-image > img {
 input[type="checkbox"] {
   display: none; }
 
-label {
+label.hamburger {
   display: none !important; }
 
 /*# sourceMappingURL=header.css.map */

@@ -24,7 +24,7 @@
     <!-- header -->
     <header>
       <div
-        class="fixed top-0 left-[50%] translate-x-[-50%] py-[24px] main-container h-max z-[1000]"
+        class="absolute top-0 left-[0] py-[24px] main-container h-max z-[1000]"
         id="header"
       >
         <nav
@@ -35,7 +35,7 @@
           >
             <a href="#" class="header-image">
               <img
-              id="headerLogoImg"
+                id="headerLogoImg"
                 class="w-[108px] xl:w-[160px] drop-shadow-[0_0_10px_#222222]"
                 src="./media/fungi_logo.png"
                 alt=""
@@ -43,7 +43,7 @@
             </a>
             <label
               for="hamburger"
-              class="fa-light fa-bars text-[24px] text-white hover:text-[#fd562a] p-[8px_16px]"
+              class="hamburger fa-light fa-bars text-[24px] text-white hover:text-[#fd562a] p-[8px_16px]"
             ></label>
           </div>
           <div
@@ -62,7 +62,9 @@
               <li
                 class="header-menu-item capitalize text-black xl:text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer xl:hover:drop-shadow-[0_0_5px_#222] w-[100%] p-[12px_20px] xl:p-0"
               >
-                <a class="xl:p-[8px_16px] w-[100%] block" href="#about">about</a>
+                <a class="xl:p-[8px_16px] w-[100%] block" href="#about"
+                  >about</a
+                >
               </li>
               <li
                 class="header-menu-item capitalize text-black xl:text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer xl:hover:drop-shadow-[0_0_5px_#222] w-[100%] p-[12px_20px] xl:p-0"
@@ -74,7 +76,9 @@
               <li
                 class="header-menu-item capitalize text-black xl:text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer xl:hover:drop-shadow-[0_0_5px_#222] w-[100%] p-[12px_20px] xl:p-0"
               >
-                <a class="xl:p-[8px_16px] w-[100%] block" href="#service">service</a>
+                <a class="xl:p-[8px_16px] w-[100%] block" href="#service"
+                  >service</a
+                >
               </li>
               <li
                 class="header-menu-item capitalize text-black xl:text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer xl:hover:drop-shadow-[0_0_5px_#222] w-[100%] p-[12px_20px] xl:p-0"
@@ -91,8 +95,19 @@
               <li
                 class="header-menu-item capitalize text-black xl:text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer xl:hover:drop-shadow-[0_0_5px_#222] w-[100%] p-[12px_20px] xl:p-0"
               >
-                <a class="xl:p-[8px_16px] w-[100%] block" href="#contact">contact</a>
+                <a class="xl:p-[8px_16px] w-[100%] block" href="#contact"
+                  >contact</a
+                >
               </li>
+              <!-- start dark mode button -->
+              <li
+                id="darkBtn"
+                class="header-menu-item capitalize text-black xl:text-white hover:text-[#fd562a] text-[18px] font-bold cursor-pointer xl:hover:drop-shadow-[0_0_5px_#222] w-[100%] p-[12px_20px] xl:p-0"
+              >
+              <span class="xl:p-[8px_16px] w-[100%] whitespace-nowrap hidden dark:block">light mode</span>
+              <span class="xl:p-[8px_16px] w-[100%] whitespace-nowrap block dark:hidden">dark mode</span>
+              </li>
+              <!-- end dark mode button -->
             </ul>
           </div>
         </nav>
@@ -102,7 +117,7 @@
     <!-- Start header section -->
     <div
       id="homeContainer"
-      class="header main-container flex items-center overflow-hidden xl:h-[100vh] h-max xl:p-0 py-[150px]"
+      class="header main-container flex justify-center flex-col overflow-hidden xl:h-[100vh] h-max xl:p-0 py-[150px]"
     >
       <div
         class="body-container relative flex items-center px-[12px] xl:flex-row flex-col"
@@ -139,7 +154,9 @@
             >Ali&nbsp;
             <strong class="text-[#fd562a]">Eslamdoust</strong>
           </h1>
-          <p class="text-[#b0aac0] text-[18px] md:text-[24px] font-light md:text-left text-center">
+          <p
+            class="text-[#b0aac0] text-[18px] md:text-[24px] font-light md:text-left text-center"
+          >
             A Passionate <strong>Web Developer</strong> from
             <strong>Tehran!</strong>
           </p>
@@ -180,7 +197,9 @@
             </div>
           </div>
         </div>
-        <div class="header-image w-4/5 md:w-3/5 xl:w-[50%] px-[12px] order-1 xl:order-2">
+        <div
+          class="header-image w-4/5 md:w-3/5 xl:w-[50%] px-[12px] order-1 xl:order-2"
+        >
           <div class="h-image relative flex justify-end">
             <img
               class="w-[100%] xl:w-[80%] rounded-[25px] relative"
@@ -188,7 +207,7 @@
               alt=""
             />
             <div
-              class="left-span-header p-[18px_24px] absolute rounded-[10px] bg-[#2f2f2f] top-[50px] left-0 xl:translate-x-[20%] translate-x-[-20%] z-[20] flex items-center"
+              class="left-span-header p-[18px_24px] absolute rounded-[10px] bg-white dark:bg-[#2f2f2f] top-[50px] left-0 xl:translate-x-[20%] translate-x-[-20%] z-[20] flex items-center"
             >
               <div
                 class="lshn-container text-[#fd562a] xl:text-[45px] text-[36px] flex font-bold"
@@ -201,13 +220,13 @@
                 </p>
               </div>
               <p
-                class="uppercase xl:text-[18px] text-[14px] text-white font-bold ml-[8px]"
+                class="uppercase xl:text-[18px] text-[14px] text-[#222] dark:text-white font-bold ml-[8px]"
               >
                 total<br />projects
               </p>
             </div>
             <div
-              class="right-span-header p-[18px_24px] absolute rounded-[10px] bg-[#2f2f2f] bottom-[50px] right-[-50px] z-[20] flex items-center"
+              class="right-span-header p-[18px_24px] absolute rounded-[10px] bg-white dark:bg-[#2f2f2f] bottom-[50px] right-[-50px] z-[20] flex items-center"
             >
               <div
                 class="lshn-container text-[#fd562a] xl:text-[45px] text-[36px] flex font-bold"
@@ -218,7 +237,7 @@
                 </p>
               </div>
               <p
-                class="uppercase xl:text-[18px] text-[14px] text-white font-bold ml-[8px]"
+                class="uppercase xl:text-[18px] text-[14px] text-[#222] dark:text-white font-bold ml-[8px]"
               >
                 worlwide<br />clients
               </p>
@@ -231,15 +250,15 @@
     <!-- About section -->
     <h6 id="about"></h6>
     <div id="aboutContainer" class="main-container h-max">
-      <div class="about-intro h-max bg-[#222] w-[100%] relative">
+      <div class="about-intro h-max bg-wjhite dark:bg-[#222] w-[100%] relative">
         <div class="body-container p-[50px_0_60px]">
           <div
             class="about-text mx-auto mb-[72px] w-[80%] lg:w-[70%] xl:w-[50%] text-center"
           >
-            <h2 class="text-[24px] text-white mb-[24px] font-bold">
+            <h2 class="text-[24px] text-black dark:text-white mb-[24px] font-bold">
               WELCOME TO MY WORLD
             </h2>
-            <p class="text-[#b0aac0;] text-[20px] font-openSans">
+            <p class="text-[#948daa] dark:text-[#b0aac0] text-[20px] font-openSans">
               I'm a young tech enthasist and entrepreneur who love to take risk.
               I grew up in a tech family in Tehran.
             </p>
@@ -251,15 +270,15 @@
               class="about w-[100%] lg:w-[calc(50%_-_12px)] xl:w-[32%] xl:mb-[60px] mb-[24px]"
             >
               <div
-                class="p-[48px] w-[100%] bg-[#2f2f2f] rounded-[10px] flex flex-col"
+                class="p-[48px] w-[100%] bg-white dark:bg-[#2f2f2f] rounded-[10px] flex flex-col"
               >
                 <span
                   class="fa-thin fa-atom text-[#fd562a] text-[48px] py-[12px]"
                 ></span>
-                <h3 class="text-[28px] mb-[18px] text-white capitalize">
+                <h3 class="text-[28px] mb-[18px] text-[#222222] dark:text-white capitalize">
                   Creativity
                 </h3>
-                <p class="text-[#b0aac0] text-[18px] font-openSans">
+                <p class="text-[#615978] dark:text-[#b0aac0] text-[18px] font-openSans">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
                   quas id quibusdam cumque ipsa possimus magni adipisci fugit
                   esse ab nostrum nisi quae tempore quia reprehenderit qui,
@@ -271,15 +290,15 @@
               class="about w-[100%] lg:w-[calc(50%_-_12px)] xl:w-[32%] xl:mb-[60px] mb-[24px]"
             >
               <div
-                class="p-[48px] w-[100%] bg-[#2f2f2f] rounded-[10px] flex flex-col"
-              >
-                <span
-                  class="fa-thin fa-gem text-[#fd562a] text-[48px] py-[12px]"
-                ></span>
-                <h3 class="text-[28px] mb-[18px] text-white capitalize">
+              class="p-[48px] w-[100%] bg-white dark:bg-[#2f2f2f] rounded-[10px] flex flex-col"
+            >
+              <span
+                class="fa-thin fa-atom text-[#fd562a] text-[48px] py-[12px]"
+              ></span>
+              <h3 class="text-[28px] mb-[18px] text-[#222222] dark:text-white capitalize">
                   Dedication
                 </h3>
-                <p class="text-[#b0aac0] text-[18px] font-openSans">
+                <p class="text-[#615978] dark:text-[#b0aac0] text-[18px] font-openSans">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
                   dolor odit minus ratione assumenda officiis quos quibusdam
                   sequi exercitationem maiores, aperiam minima rerum doloremque
@@ -291,15 +310,15 @@
               class="about w-[100%] lg:w-[calc(50%_-_12px)] xl:w-[32%] xl:mb-[60px] mb-[24px]"
             >
               <div
-                class="p-[48px] w-[100%] bg-[#2f2f2f] rounded-[10px] flex flex-col"
-              >
-                <span
-                  class="fa-thin fa-rocket text-[#fd562a] text-[48px] py-[12px]"
-                ></span>
-                <h3 class="text-[28px] mb-[18px] text-white capitalize">
+              class="p-[48px] w-[100%] bg-white dark:bg-[#2f2f2f] rounded-[10px] flex flex-col"
+            >
+              <span
+                class="fa-thin fa-atom text-[#fd562a] text-[48px] py-[12px]"
+              ></span>
+              <h3 class="text-[28px] mb-[18px] text-[#222222] dark:text-white capitalize">
                   Hard Work
                 </h3>
-                <p class="text-[#b0aac0] text-[18px] font-openSans">
+                <p class="text-[#615978] dark:text-[#b0aac0] text-[18px] font-openSans">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Officiis beatae culpa nemo commodi nihil recusandae velit ut
                   repellendus. Illum perferendis maxime quas cum ipsam soluta
@@ -316,7 +335,7 @@
         />
       </div>
       <!-- second part of about section -->
-      <div class="main-about w-[100%] bg-[#2a2a2a] relative">
+      <div class="main-about w-[100%] bg-[#f2f5fb] dark:bg-[#2a2a2a] relative">
         <img
           src="./media/about-element-1.png"
           class="floating absolute right-[50px] top-[-45px]"
@@ -330,7 +349,9 @@
         <div
           class="body-container p-[120px_0_140px] flex md:items-stretch xl:flex-row flex-col items-center"
         >
-          <div class="about-img w-[70%] lg:w-[50%] relative px-[12px] xl:mb-0 mb-[250px]">
+          <div
+            class="about-img w-[70%] lg:w-[50%] relative px-[12px] xl:mb-0 mb-[250px]"
+          >
             <div
               class="about-img-top relative w-[100%] h-max flex items-center justify-center gap-x-4"
             >
@@ -356,50 +377,52 @@
           </div>
           <div class="about-text w-[100%] xl:w-[50%] flex flex-col px-[12px]">
             <h2
-              class="capitalize text-[48px] mb-[30px] font-bold text-white leading-[1.2]"
+              class="capitalize text-[48px] mb-[30px] font-bold text-[#222222] dark:text-white leading-[1.2]"
             >
               <span class="uppercase text-[18px] text-[#fd562a] block"
                 >About Me</span
               >Junior Web Designer from Tehran
             </h2>
-            <p class="mb-[16px] font-openSans text-[#b0aac0] text-[18px]">
+            <p class="mb-[16px] font-openSans text-[#615978] dark:text-[#b0aac0] text-[18px]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Distinctio quis alias reiciendis rem tempora in accusamus.
               Corporis consequuntur aspernatur numquam, quibusdam cum maxime
               libero natus ipsa eum ut perspiciatis officiis.
             </p>
-            <p class="mb-[16px] font-openSans text-[#b0aac0] text-[18px]">
+            <p class="mb-[16px] font-openSans text-[#615978] dark:text-[#b0aac0] text-[18px]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
               nisi dolorum accusantium.
             </p>
-            <div class="about-me flex w-[100%] mb-[32px] md:flex-row flex-col md:gap-0 gap-[12px]">
+            <div
+              class="about-me flex w-[100%] mb-[32px] md:flex-row flex-col md:gap-0 gap-[12px]"
+            >
               <div class="flex flex-col gap-[12px] px-[12px] flex-grow">
                 <div class="leading-[1.5]">
-                  <h4 class="uppercase text-[16px] text-white font-bold">
+                  <h4 class="uppercase text-[16px] text-[#222222] dark:text-white font-bold">
                     name
                   </h4>
                   <p
-                    class="text-[18px] text-[#b0aac0] capitalize font-openSans"
+                    class="text-[18px] text-[#615978] dark:text-[#b0aac0] capitalize font-openSans"
                   >
                     Ali Eslamdoust
                   </p>
                 </div>
                 <div class="leading-[1.5]">
-                  <h4 class="uppercase text-[16px] text-white font-bold">
+                  <h4 class="uppercase text-[16px] text-[#222222] dark:text-white font-bold">
                     email
                   </h4>
                   <p
-                    class="text-[18px] text-[#b0aac0] capitalize font-openSans"
+                    class="text-[18px] text-[#615978] dark:text-[#b0aac0] capitalize font-openSans"
                   >
                     AliEsi3410@outlook.com
                   </p>
                 </div>
                 <div class="leading-[1.5]">
-                  <h4 class="uppercase text-[16px] text-white font-bold">
+                  <h4 class="uppercase text-[16px] text-[#222222] dark:text-white font-bold">
                     phone
                   </h4>
                   <p
-                    class="text-[18px] text-[#b0aac0] capitalize font-openSans"
+                    class="text-[18px] text-[#615978] dark:text-[#b0aac0] capitalize font-openSans"
                   >
                     +98 9123456789
                   </p>
@@ -407,31 +430,31 @@
               </div>
               <div class="flex flex-col gap-[12px] px-[12px] flex-grow">
                 <div class="leading-[1.5]">
-                  <h4 class="uppercase text-[16px] text-white font-bold">
+                  <h4 class="uppercase text-[16px] text-[#222222] dark:text-white font-bold">
                     age
                   </h4>
                   <p
-                    class="text-[18px] text-[#b0aac0] capitalize font-openSans"
+                    class="text-[18px] text-[#615978] dark:text-[#b0aac0] capitalize font-openSans"
                   >
                     18 years
                   </p>
                 </div>
                 <div class="leading-[1.5]">
-                  <h4 class="uppercase text-[16px] text-white font-bold">
+                  <h4 class="uppercase text-[16px] text-[#222222] dark:text-white font-bold">
                     education
                   </h4>
                   <p
-                    class="text-[18px] text-[#b0aac0] capitalize font-openSans"
+                    class="text-[18px] text-[#615978] dark:text-[#b0aac0] capitalize font-openSans"
                   >
                     diploma in physics
                   </p>
                 </div>
                 <div class="leading-[1.5]">
-                  <h4 class="uppercase text-[16px] text-white font-bold">
+                  <h4 class="uppercase text-[16px] text-[#222222] dark:text-white font-bold">
                     freelance
                   </h4>
                   <p
-                    class="text-[18px] text-[#b0aac0] capitalize font-openSans"
+                    class="text-[18px] text-[#615978] dark:text-[#b0aac0] capitalize font-openSans"
                   >
                     available
                   </p>
@@ -541,12 +564,14 @@
     <h6 id="portfolio"></h6>
     <div
       id="portfolioContainer"
-      class="main-container h-max p-[120px_0_100px] bg-[#222222] portfolio relative"
+      class="main-container h-max p-[120px_0_100px] bg-white dark:bg-[#222222] portfolio relative"
     >
       <div class="body-container h-max">
-        <div class="mx-auto mb-[72px] w-[80%] lg:w-[70%] xl:w-[50%] text-center">
-          <h2 class="text-[24px] text-white mb-[24px] font-bold">PORTFOLIO</h2>
-          <p class="text-[#b0aac0;] text-[20px] font-openSans">
+        <div
+          class="mx-auto mb-[72px] w-[80%] lg:w-[70%] xl:w-[50%] text-center"
+        >
+          <h2 class="text-[24px] text-[#222222] dark:text-white mb-[24px] font-bold">PORTFOLIO</h2>
+          <p class="text-[#615978] dark:text-[#b0aac0] text-[20px] font-openSans">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. In maxime
             aliquam perspiciatis quo commodi nostrum laudantium eius quae
             sapiente ea.
@@ -561,27 +586,31 @@
         >
           <label
             for="p-input-1"
-            class="portfolio-btn-active bg-transparent text-[#b0aac0] p-[6px_12px] text-[16px] font-openSans rounded-[4px] border-[#b0aac0] border border-solid hover:border-[#fd562a]"
+            class="portfolio-btn-active bg-transparent text-[#615978] dark:text-[#b0aac0] p-[6px_12px] text-[16px] font-openSans rounded-[4px] border-[#222222] dark:border-[#b0aac0] border border-solid hover:dark:border-[#fd562a] hover:border-[#fd562a]"
             >All</label
           >
           <label
             for="p-input-2"
-            class="bg-transparent text-[#b0aac0] p-[6px_12px] text-[16px] font-openSans rounded-[4px] border-[#b0aac0] border border-solid hover:border-[#fd562a]"
+            class="bg-transparent text-[#615978] dark:text-[#b0aac0] p-[6px_12px] text-[16px] font-openSans rounded-[4px] border-[#222222] dark:border-[#b0aac0] border border-solid hover:dark:border-[#fd562a] hover:border-[#fd562a]"
             >HTML & CSS</label
           >
           <label
             for="p-input-3"
-            class="bg-transparent text-[#b0aac0] p-[6px_12px] text-[16px] font-openSans rounded-[4px] border-[#b0aac0] border border-solid hover:border-[#fd562a]"
+            class="bg-transparent text-[#615978] dark:text-[#b0aac0] p-[6px_12px] text-[16px] font-openSans rounded-[4px] border-[#222222] dark:border-[#b0aac0] border border-solid hover:dark:border-[#fd562a] hover:border-[#fd562a]"
             >WordPress</label
           >
           <label
             for="p-input-4"
-            class="bg-transparent text-[#b0aac0] p-[6px_12px] text-[16px] font-openSans rounded-[4px] border-[#b0aac0] border border-solid hover:border-[#fd562a]"
+            class="bg-transparent text-[#615978] dark:text-[#b0aac0] p-[6px_12px] text-[16px] font-openSans rounded-[4px] border-[#222222] dark:border-[#b0aac0] border border-solid hover:dark:border-[#fd562a] hover:border-[#fd562a]"
             >Design</label
           >
         </div>
-        <div class="portfolio-items flex flex-wrap w-[100%] md:items-stretch md:flex-row flex-col items-center">
-          <div class="w-[80%] md:w-[calc((100%_-_24px)_/_2)] lg:w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css">
+        <div
+          class="portfolio-items flex flex-wrap w-[100%] md:items-stretch md:flex-row flex-col items-center"
+        >
+          <div
+            class="w-[80%] md:w-[calc((100%_-_24px)_/_2)] lg:w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css"
+          >
             <div
               class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
             >
@@ -611,7 +640,9 @@
               </div>
             </div>
           </div>
-          <div class="w-[80%] md:w-[calc((100%_-_24px)_/_2)] lg:w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css">
+          <div
+            class="w-[80%] md:w-[calc((100%_-_24px)_/_2)] lg:w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css"
+          >
             <div
               class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
             >
@@ -673,7 +704,9 @@
               </div>
             </div>
           </div>
-          <div class="w-[80%] md:w-[calc((100%_-_24px)_/_2)] lg:w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css">
+          <div
+            class="w-[80%] md:w-[calc((100%_-_24px)_/_2)] lg:w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css"
+          >
             <div
               class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
             >
@@ -703,7 +736,9 @@
               </div>
             </div>
           </div>
-          <div class="w-[80%] md:w-[calc((100%_-_24px)_/_2)] lg:w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] design">
+          <div
+            class="w-[80%] md:w-[calc((100%_-_24px)_/_2)] lg:w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] design"
+          >
             <div
               class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
             >
@@ -733,7 +768,9 @@
               </div>
             </div>
           </div>
-          <div class="w-[80%] md:w-[calc((100%_-_24px)_/_2)] lg:w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css">
+          <div
+            class="w-[80%] md:w-[calc((100%_-_24px)_/_2)] lg:w-[calc((100%_-_48px)_/_3)] px-[12px] mb-[24px] html-css"
+          >
             <div
               class="porfolio-item rounded-[10px] relative overflow-hidden w-[100%] bg-[#DDDDDF]"
             >
@@ -784,11 +821,13 @@
     >
       <h6 id="service"></h6>
       <div class="body-container h-max">
-        <div class="mx-auto mb-[72px] w-[80%] lg:w-[70%] xl:w-[50%] text-center">
+        <div
+          class="mx-auto mb-[72px] w-[80%] lg:w-[70%] xl:w-[50%] text-center"
+        >
           <h2 class="text-[24px] text-white mb-[24px] font-bold uppercase">
             service
           </h2>
-          <p class="text-[#b0aac0;] text-[20px] font-openSans">
+          <p class="text-[#b0aac0] text-[20px] font-openSans">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eos,
             inventore nesciunt eveniet qui.
           </p>
@@ -956,7 +995,7 @@
           <h2 class="text-[24px] text-white mb-[24px] font-bold uppercase">
             testimonials
           </h2>
-          <p class="text-[#b0aac0;] text-[20px] font-openSans">
+          <p class="text-[#b0aac0] text-[20px] font-openSans">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eos,
             inventore nesciunt eveniet qui.
           </p>
@@ -1268,7 +1307,7 @@
     </div>
     <!-- end testimonial -->
     <!-- start blog -->
-    <div id="blogContainer" class="main-container h-max bg-[#222222]">
+    <div id="blogContainer" class="main-container h-max bg-white dark:bg-[#222222]">
       <h6 id="blog"></h6>
       <div class="body-container p-[120px_0_100px] relative">
         <img
@@ -1282,16 +1321,16 @@
           alt=""
         />
         <div class="mx-auto mb-[72px] w-[70%] xl:w-[50%] text-center">
-          <h2 class="text-[24px] text-white mb-[24px] font-bold uppercase">
+          <h2 class="text-[24px] text-[#222222] dark:text-white mb-[24px] font-bold uppercase">
             blog
           </h2>
-          <p class="text-[#b0aac0;] text-[20px] font-openSans">
+          <p class="text-[#615978] dark:text-[#b0aac0] text-[20px] font-openSans">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eos,
             inventore nesciunt eveniet qui.
           </p>
         </div>
         <div class="blogGird w-[100%]">
-          <a href="#" class="bg-white blog-left group relative">
+          <a href="#" class="bg-white blog-left group relative border-black dark:border-white">
             <img
               class="brightness-75 group-hover:brightness-50"
               src="./media/post-thumbnail-01.jpg"
@@ -1321,14 +1360,14 @@
               </div>
             </div>
           </a>
-          <a href="#" class="blog-tr relative group">
+          <a href="#" class="blog-tr relative group border-black dark:border-white bg-transparent hover:bg-[#222222]">
             <img
               src="./media/post-thumbnail-03.jpg"
               class="opacity-100 xl:opacity-0 xl:brightness-100 brightness-50 group-hover:opacity-75"
               alt=""
             />
             <div
-              class="flex md:flex-col flex-wrap gap-2 md:mb-[12px] absolute w-4/5 md:h-[100%] left-1/2 -translate-x-1/2 md:top-0 bottom-0 p-[20px_0_60px] md:py-[20px] text-white md:text-[#948daa] md:group-hover:text-white"
+              class="flex md:flex-col flex-wrap gap-2 md:mb-[12px] absolute w-4/5 md:h-[100%] left-1/2 -translate-x-1/2 md:top-0 bottom-0 p-[20px_0_60px] md:py-[20px] text-white xl:text-[#948daa] xl:dark:text-[#948daa] md:text-[#948daa] md:group-hover:text-white md:group-hover:dark:text-white group"
             >
               <span
                 class="font-openSans text-[16px] flex gap-1 capitalize items-center md:order-3"
@@ -1343,22 +1382,22 @@
                 <p>Web design</p>
               </span>
               <div
-                class="flex font-bold text-[24px] md:text-[18px] xl:text-[21px] md:order-2 md:flex-grow lowercase w-[100%]"
+                class="text-[#222222] dark:text-white group-hover:text-white group-hover:dark:text-white flex font-bold text-[24px] md:text-[18px] xl:text-[21px] md:order-2 md:flex-grow lowercase w-[100%]"
               >
-                <p class="text-white hover:text-[#fd562a] block h-max w-max">
+                <p class="hover:text-[#fd562a] hover:dark:text-[#fd562a] block h-max w-max">
                   Design a wesite using Figma easily
                 </p>
               </div>
             </div>
           </a>
-          <a href="#" class="blog-br relative group">
+          <a href="#" class="blog-br relative group border-black dark:border-white bg-transparent hover:bg-[#222222]">
             <img
               src="./media/post-thumbnail-04.jpg"
               class="opacity-100 xl:opacity-0 xl:brightness-100 brightness-50 group-hover:opacity-75"
               alt=""
             />
             <div
-              class="flex md:flex-col flex-wrap gap-2 md:mb-[12px] absolute w-4/5 md:h-[100%] left-1/2 -translate-x-1/2 md:top-0 bottom-0 p-[20px_0_60px] md:py-[20px] text-white md:text-[#948daa] md:group-hover:text-white"
+            class="flex md:flex-col flex-wrap gap-2 md:mb-[12px] absolute w-4/5 md:h-[100%] left-1/2 -translate-x-1/2 md:top-0 bottom-0 p-[20px_0_60px] md:py-[20px] text-white xl:text-[#948daa] xl:dark:text-[#948daa] md:text-[#948daa] md:group-hover:text-white md:group-hover:dark:text-white group"
             >
               <span
                 class="font-openSans text-[16px] flex gap-1 capitalize items-center md:order-3"
@@ -1373,22 +1412,22 @@
                 <p>Web design</p>
               </span>
               <div
-                class="flex font-bold text-[24px] md:text-[18px] xl:text-[21px] md:order-2 md:flex-grow lowercase w-[100%]"
+                class="text-[#222222] dark:text-white group-hover:text-white group-hover:dark:text-white flex font-bold text-[24px] md:text-[18px] xl:text-[21px] md:order-2 md:flex-grow lowercase w-[100%]"
               >
-                <p class="text-white hover:text-[#fd562a] block h-max w-max">
+                <p class="hover:text-[#fd562a] hover:dark:text-[#fd562a] block h-max w-max">
                   Break on through to the other side
                 </p>
               </div>
             </div>
           </a>
-          <a href="#" class="blog-tl relative group">
+          <a href="#" class="blog-tl relative group border-black dark:border-white bg-transparent hover:bg-[#222222]">
             <img
               src="./media/post-thumbnail-05.jpg"
               class="opacity-100 xl:opacity-0 xl:brightness-100 brightness-50 group-hover:opacity-75"
               alt=""
             />
             <div
-              class="flex md:flex-col flex-wrap gap-2 md:mb-[12px] absolute w-4/5 md:h-[100%] left-1/2 -translate-x-1/2 md:top-0 bottom-0 p-[20px_0_60px] md:py-[20px] text-white md:text-[#948daa] md:group-hover:text-white"
+            class="flex md:flex-col flex-wrap gap-2 md:mb-[12px] absolute w-4/5 md:h-[100%] left-1/2 -translate-x-1/2 md:top-0 bottom-0 p-[20px_0_60px] md:py-[20px] text-white xl:text-[#948daa] xl:dark:text-[#948daa] md:text-[#948daa] md:group-hover:text-white md:group-hover:dark:text-white group"
             >
               <span
                 class="font-openSans text-[16px] flex gap-1 capitalize items-center md:order-3"
@@ -1403,22 +1442,22 @@
                 <p>Web design</p>
               </span>
               <div
-                class="flex font-bold text-[24px] md:text-[18px] xl:text-[21px] md:order-2 md:flex-grow lowercase w-[100%]"
+                class="text-[#222222] dark:text-white group-hover:text-white group-hover:dark:text-white flex font-bold text-[24px] md:text-[18px] xl:text-[21px] md:order-2 md:flex-grow lowercase w-[100%]"
               >
-                <p class="text-white hover:text-[#fd562a] block h-max w-max">
+                <p class="hover:text-[#fd562a] hover:dark:text-[#fd562a] block h-max w-max">
                   Imagine there is no heaven
                 </p>
               </div>
             </div>
           </a>
-          <a href="#" class="blog-bl relative group">
+          <a href="#" class="blog-bl relative group border-black dark:border-white bg-transparent hover:bg-[#222222]">
             <img
               src="./media/post-thumbnail-06.jpg"
               class="opacity-100 xl:opacity-0 xl:brightness-100 brightness-50 group-hover:opacity-75"
               alt=""
             />
             <div
-              class="flex md:flex-col flex-wrap gap-2 md:mb-[12px] absolute w-4/5 md:h-[100%] left-1/2 -translate-x-1/2 md:top-0 bottom-0 p-[20px_0_60px] md:py-[20px] text-white md:text-[#948daa] md:group-hover:text-white"
+            class="flex md:flex-col flex-wrap gap-2 md:mb-[12px] absolute w-4/5 md:h-[100%] left-1/2 -translate-x-1/2 md:top-0 bottom-0 p-[20px_0_60px] md:py-[20px] text-white xl:text-[#948daa] xl:dark:text-[#948daa] md:text-[#948daa] md:group-hover:text-white md:group-hover:dark:text-white group"
             >
               <span
                 class="font-openSans text-[16px] flex gap-1 capitalize items-center md:order-3"
@@ -1433,9 +1472,9 @@
                 <p>Web design</p>
               </span>
               <div
-                class="flex font-bold text-[24px] md:text-[18px] xl:text-[21px] md:order-2 md:flex-grow lowercase w-[100%]"
+                class="text-[#222222] dark:text-white group-hover:text-white group-hover:dark:text-white flex font-bold text-[24px] md:text-[18px] xl:text-[21px] md:order-2 md:flex-grow lowercase w-[100%]"
               >
-                <p class="text-white hover:text-[#fd562a] block h-max w-max">
+                <p class="hover:text-[#fd562a] hover:dark:text-[#fd562a] block h-max w-max">
                   When the musics over turn off the light
                 </p>
               </div>
@@ -1485,7 +1524,7 @@
     <!-- start contact -->
     <div
       id="contactContainer"
-      class="main-container bg-[#222222] p-[100px_0_60px] relative"
+      class="main-container bg-white dark:bg-[#222222] p-[100px_0_60px] relative"
     >
       <img
         src="./media/contact-element-1.png"
@@ -1499,11 +1538,13 @@
       />
       <h6 id="contact"></h6>
       <div class="body-container">
-        <div class="mx-auto mb-[72px] w-[80%] lg:w-[70%] xl:w-[50%] text-center">
-          <h2 class="text-[24px] text-white mb-[24px] font-bold uppercase">
+        <div
+          class="mx-auto mb-[72px] w-[80%] lg:w-[70%] xl:w-[50%] text-center"
+        >
+          <h2 class="text-[24px] text-[#222222] dark:text-white mb-[24px] font-bold uppercase">
             get in touch
           </h2>
-          <p class="text-[#b0aac0;] text-[20px] font-openSans">
+          <p class="text-[#615978] dark:text-[#b0aac0] text-[20px] font-openSans">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eos,
             inventore nesciunt eveniet qui.
           </p>
@@ -1518,10 +1559,10 @@
               ></span>
             </div>
             <div class="flex flex-col">
-              <h4 class="text-white text-[24px] font-bold mb-[8px] capitalize">
+              <h4 class="text-[#222222] dark:text-white text-[24px] font-bold mb-[8px] capitalize">
                 Address
               </h4>
-              <p class="text-[#b0aac0] font-openSans text-[18px] capitalize">
+              <p class="text-[#615978] dark:text-[#b0aac0] font-openSans text-[18px] capitalize">
                 Tehran Province, Tehran, Azadi St
               </p>
             </div>
@@ -1533,12 +1574,12 @@
               <span class="fa-thin fa-phone text-[24px] text-white"></span>
             </div>
             <div class="flex flex-col">
-              <h4 class="text-white text-[24px] font-bold mb-[8px] capitalize">
+              <h4 class="text-[#222222] dark:text-white text-[24px] font-bold mb-[8px] capitalize">
                 phone
               </h4>
               <a
                 href="tel:02166929920"
-                class="text-[#b0aac0] font-openSans text-[18px] capitalize hover:text-[#fd562a]"
+                class="text-[#615978] dark:text-[#b0aac0] font-openSans text-[18px] capitalize hover:text-[#fd562a]"
                 >021 6692 9920</a
               >
             </div>
@@ -1550,12 +1591,12 @@
               <span class="fa-thin fa-envelope text-[24px] text-white"></span>
             </div>
             <div class="flex flex-col">
-              <h4 class="text-white text-[24px] font-bold mb-[8px] capitalize">
+              <h4 class="text-[#222222] dark:text-white text-[24px] font-bold mb-[8px] capitalize">
                 email
               </h4>
               <a
                 href="mailto:tehranmft@enghelab.com"
-                class="text-[#b0aac0] font-openSans text-[18px] capitalize hover:text-[#fd562a]"
+                class="text-[#615978] dark:text-[#b0aac0] font-openSans text-[18px] capitalize hover:text-[#fd562a]"
                 >tehranmft@enghelab.com</a
               >
             </div>
@@ -1577,7 +1618,7 @@
           <div
             class="flex flex-col flex-grow mb-[60px] xl:w-auto w-[100%] xl:items-start items-center"
           >
-            <h2 class="text-[36px] text-white mb-[48px] font-bold">
+            <h2 class="text-[36px] text-[#222222] dark:text-white mb-[48px] font-bold">
               Write me a message
             </h2>
             <form
@@ -1588,7 +1629,7 @@
                   <input
                     type="text"
                     placeholder="Name*"
-                    class="w-[100%] bg-[#2a2a2a] border outline-none border-[#606060] text-[#948daa] rounded-[5px] p-[12px_18px] font-openSans text-[18px]"
+                    class="w-[100%] bg-white dark:bg-[#2a2a2a] border outline-none border-black dark:border-[#606060] text-[#212529] dark:text-[#948daa] rounded-[5px] p-[12px_18px] font-openSans text-[18px]"
                     required
                   />
                 </div>
@@ -1596,7 +1637,7 @@
                   <input
                     type="email"
                     placeholder="Email*"
-                    class="w-[100%] bg-[#2a2a2a] border outline-none border-[#606060] text-[#948daa] rounded-[5px] p-[12px_18px] font-openSans text-[18px]"
+                    class="w-[100%] bg-white dark:bg-[#2a2a2a] border outline-none border-black dark:border-[#606060] text-[#212529] dark:text-[#948daa] rounded-[5px] p-[12px_18px] font-openSans text-[18px]"
                     required
                   />
                 </div>
@@ -1605,7 +1646,7 @@
                 <textarea
                   type=""
                   placeholder="Your message here*"
-                  class="w-[100%] xl:min-h-auto min-h-[200px] bg-[#2a2a2a] border outline-none border-[#606060] text-[#948daa] rounded-[5px] p-[12px_18px] font-openSans text-[18px] mb-[16px] flex-grow"
+                  class="w-[100%] xl:min-h-auto min-h-[200px] bg-white dark:bg-[#2a2a2a] border outline-none border-black dark:border-[#606060] text-[#212529] dark:text-[#948daa] rounded-[5px] p-[12px_18px] font-openSans text-[18px] mb-[16px] flex-grow"
                   required
                 ></textarea>
                 <button
@@ -1625,7 +1666,9 @@
     <footer>
       <div class="main-container h-max footerContainer">
         <div class="body-container py-[100px] relative">
-          <div class="mx-auto mb-[72px] w-[90%] md:w-[80%] lg:w-[70%] xl:w-[50%] text-center">
+          <div
+            class="mx-auto mb-[72px] w-[90%] md:w-[80%] lg:w-[70%] xl:w-[50%] text-center"
+          >
             <h2
               class="text-[24px] text-white mb-[24px] font-bold uppercase text-center"
             >
@@ -1635,7 +1678,7 @@
                 alt=""
               />
             </h2>
-            <p class="text-[#b0aac0;] text-[20px] font-openSans">
+            <p class="text-[#b0aac0] text-[20px] font-openSans">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. In eos,
               inventore nesciunt eveniet qui.
             </p>
@@ -1662,7 +1705,9 @@
               class="fa-brands fa-linkedin text-white hover:text-[#fd562a] text-[24px]"
             ></a>
           </div>
-          <div class="flex w-[100%] items-center flex-col md:flex-row md:justify-between mt-[80px] md:gap-0 gap-[20px]">
+          <div
+            class="flex w-[100%] items-center flex-col md:flex-row md:justify-between mt-[80px] md:gap-0 gap-[20px]"
+          >
             <p class="capitalize text-[16px] text-[#b0aac0]">
               All rights reserved &copy; 2023
               <a href="#" class="hover:text-[#fd562a]">Ali Eslamdoust</a>

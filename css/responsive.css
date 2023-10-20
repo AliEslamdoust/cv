@@ -6,14 +6,14 @@
     right: calc(50% - 160px);
     top: calc(50% - 150px); }
 
-  label {
+  label.hamburger {
     display: none !important; } }
 @media (max-width: 1200px) {
   img.floating,
   img.floatingx {
     display: none; }
 
-  label {
+  label.hamburger {
     display: block !important; }
 
   div.h-image::before {

@@ -31,6 +31,23 @@ $main-font: poppins;
   margin: 0 auto;
   height: 100%;
 }
+.header-after {
+  animation: fadeInTop 0.25s;
+  padding: 12px 0;
+  background: #222222;
+  position: fixed;
+}
+.logo-after {
+  width: 108px;
+}
+@keyframes fadeInTop {
+  0% {
+    transform: translatey(-100%);
+  }
+  100% {
+    transform: translatey(0);
+  }
+}
 @media (min-width: 1400px) {
   .body-container {
     width: 1296px;
